@@ -1,6 +1,6 @@
 TRG
 ===
-Projeto TecWeb II - possíveis temas: rede social específica (profissões/época) 
+Projeto TecWeb II - tema em discussão: e-commerce
 #Equipe 
 
 * Rhenan
