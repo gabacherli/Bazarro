@@ -1,6 +1,7 @@
 Bazarro
 =======
-Projeto TecWeb II - tema em discussão: e-commerce
+Projeto TecWeb II - tema: e-commerce
+====================================
 #Equipe 
 
 * Rhenan
