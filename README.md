@@ -1,5 +1,5 @@
-TRG
-===
+Bazarro
+=======
 Projeto TecWeb II - tema em discussão: e-commerce
 #Equipe 
 
