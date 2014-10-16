@@ -13,6 +13,6 @@ create table usuario (
     nome varchar(20),
     datanasc Date,
     celular varchar(10),
-    telefone varchar(10)
+    telefone varchar(10),
     
 );
