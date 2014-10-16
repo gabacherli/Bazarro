@@ -1,0 +1,47 @@
+.item{
+	height: 90px;
+	width: auto;
+	margin: 2% 15% 1% 15%;
+	border: 1px grey solid;
+	border-radius: 6px;
+	padding: 1%;
+}
+
+.item img{
+	height: 100px;
+	width: 100px;
+	float: left;
+}
+
+.item .nome{
+	float: left;
+	margin: 1% 2% 0% 15%;
+	
+}
+
+.item input{
+	height: auto;
+	width: 40px;
+	float: left;
+	margin: 1% 2% 0% 15%;
+}
+
+.item .preco{
+	float: left;
+	margin: 1% 2% 0% 15%;
+}
+
+.finalizar{
+	height: 50px;
+	width: auto;
+	margin: 2% 15% 1% 15%;
+	padding: 1%;
+	clear: left;
+}
+
+.finalizar img{
+	margin-left: 10%;
+	height: 40px;
+	width: 300px;
+	border-radius: 10px;
+}
