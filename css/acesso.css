@@ -1,0 +1,118 @@
+.login{
+	margin: 5% 5% 5% 15%;
+	border:1px black solid;
+	width: 30%;
+	height: 300px;
+	padding: 1%;
+	float: left;
+}
+
+.login p{
+	font-size:16pt;
+	margin-left: 5%;
+	
+}
+.login input{
+	
+}
+.login form {
+	font-size: 12pt;
+	margin: 2% 0% 2% 2%;
+}
+.login form input[type="email"]{ 
+border: 1px solid #FF5E00;
+	border-radius: 4px;
+	margin: 2%;
+	padding: 4px;
+}
+.login form input[type="password"]{ 
+border: 1px solid #FF5E00;
+	border-radius: 4px;
+	margin: 2%;
+	padding: 4px;
+}
+.login form input[type="image"]{
+	margin: 2%;
+} 
+
+.signin{
+	margin: 5% 0% 5% 0%;
+	border:1px black solid;
+	width: 30%;
+	height: auto;
+	padding:1%;
+	float: left;
+}
+
+.signin p{
+	font-size:16pt;
+	margin-left: 5%;
+}
+
+.signin form{
+	font-size: 12pt;
+	margin: 2% 0% 2% 2%;
+}
+
+.signin form input[type="text"]{
+	border: 1px solid #FF5E00;
+	border-radius: 4px;
+	padding: 4px;
+	margin: 2%;
+}
+
+.signin form input[type="email"]{
+	border: 1px solid #FF5E00;
+	border-radius: 4px;
+	padding: 4px;
+	margin: 2%;
+}
+
+.signin form input[type="password"]{
+	border: 1px solid #FF5E00;
+	border-radius: 4px;
+	padding: 4px;
+	margin: 2%;
+}
+
+.signin form input[type="number"]{
+	border: 1px solid #FF5E00;
+	border-radius: 4px;
+	padding: 4px;
+	margin: 2%;
+}
+
+.signin form input[type="address"]{
+	border: 1px solid #FF5E00;
+	border-radius: 4px;
+	padding: 4px;
+	margin: 2%;
+}
+
+.signin form input[type="name"]{
+	border: 1px solid #FF5E00;
+	border-radius: 4px;
+	padding: 4px;
+	margin: 2%;
+}
+
+.signin form input[type="date"]{
+	border: 1px solid #FF5E00;
+	border-radius: 4px;
+	padding: 4px;
+	margin: 2%;
+}
+
+.signin form input[type="radio"]{
+	border: 1px solid #FF5E00;
+	border-radius: 4px;
+	padding: 4px;
+	margin: 2%;
+}
+
+.signin form select{
+	border: 1px solid #FF5E00;
+	border-radius: 4px;
+	padding: 4px;
+	margin: 2%;
+}
