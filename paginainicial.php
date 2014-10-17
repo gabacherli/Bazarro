@@ -16,15 +16,6 @@
 	</head>
 
 	<body>
-		<div id="fb-root"></div>
-		<script>(function(d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			  js = d.createElement(s); js.id = id;
-			  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-			  fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));
-		</script>
 		<header>
 			<div class="top">
 				<a class="share-icon share-facebook" target="_blank" href="https://www.facebook.com/pages/Bazarro/620119341440567" title="Share on Facebook"></a>
@@ -38,7 +29,7 @@
 			
 			<div class="x">
 				
-                            <a href="index.php"><img class="LOGO" alt="LOGO" src="Img/Sociais/LOGO.png"/></a>
+				<a href="index.php"><img class="LOGO" alt="LOGO" src="Img/Sociais/LOGO.png"/></a>
 				
 				<form>
 					<input type="search" placeholder=" S E A R C H"/>		
@@ -46,7 +37,8 @@
 				</form>	
 		
 				<div class="y">	
-					<a href="acesso.php"><p>Acesse sua conta</p></a>
+					<a href="carrinho.php"><img src="Img/Sociais/carrinho.png" alt="carrinho"/><p>Carrinho</p></a>
+					<a href="index.php"><p>Sign Out</p></a>
 				</div>
 				
 			</div>
@@ -150,34 +142,34 @@
 				<!-- Slides Container -->
 				<div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 950px; height: 400px; overflow: hidden;">
 					<div>
-						<img u="image" src="Img/tmp/02.jpg" />
+						<img u="image" src="Jssor.Slider.FullPack/img/landscape/02.jpg" />
 					</div>
 					<div>
-                                                <img u="image" src="Img/tmp/03.jpg" />
+						<img u="image" src="Jssor.Slider.FullPack/img/landscape/03.jpg" />
 					</div>
 					<div>
-						<img u="image" src="Img/tmp/04.jpg" />
+						<img u="image" src="Jssor.Slider.FullPack/img/landscape/04.jpg" />
 					</div>
 					<div>
-						<img u="image" src="Img/tmp/05.jpg" />
+						<img u="image" src="Jssor.Slider.FullPack/img/landscape/05.jpg" />
 					</div>
 					<div>
-						<img u="image" src="Img/tmp/06.jpg" />
+						<img u="image" src="Jssor.Slider.FullPack/img/landscape/06.jpg" />
 					</div>
 					<div>
-						<img u="image" src="Img/tmp/07.jpg" />
+						<img u="image" src="Jssor.Slider.FullPack/img/landscape/07.jpg" />
 					</div>
 					<div>
-						<img u="image" src="Img/tmp/08.jpg" />
+						<img u="image" src="Jssor.Slider.FullPack/img/landscape/08.jpg" />
 					</div>
 					<div>
-						<img u="image" src="Img/tmp/09.jpg" />
+						<img u="image" src="Jssor.Slider.FullPack/img/landscape/09.jpg" />
 					</div>
 					<div>
-						<img u="image" src="Img/tmp/10.jpg" />
+						<img u="image" src="Jssor.Slider.FullPack/img/landscape/10.jpg" />
 					</div>
 					<div>
-						<img u="image" src="Img/tmp/11.jpg" />
+						<img u="image" src="Jssor.Slider.FullPack/img/landscape/11.jpg" />
 					</div>
 				</div>
 				<!-- bullet navigator container -->
@@ -192,8 +184,6 @@
 				<span u="arrowright" class="jssora12r" style="width: 30px; height: 46px; top: 180px; right: 0px">
 				</span>
 			</div>
-			</br></br></br></br>
-			<div class="fb-comments" data-href="http://facebook.com/example.com/comments" data-numposts="5" data-colorscheme="light"></div>
 		</section>
 		
 		<footer>
