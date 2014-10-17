@@ -10,7 +10,7 @@
 		
 		<link rel="stylesheet" type="text/css" href="css/padrao.css"/> <!-- CSS TOPO PADRÃO -->
 		<link rel="stylesheet" type="text/css" href="css/acesso.css"/> <!-- CSS ACESSO DE PRODUTOS -->
-		<link rel="shortcut icon" type="image/x-icon" href="Img/Sociais/SI.png"/> <!-- ÍCONE NAVEGADOR -->
+		<link rel="shortcut icon" type="image/x-icon" href="Img/Sociais/favicon.png"/> <!-- ÍCONE NAVEGADOR -->
 		
 	</head>
 
