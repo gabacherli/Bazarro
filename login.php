@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="pt-br">       
 <?php
 
     $email = $_POST['campoemail'];
@@ -9,18 +11,14 @@
         header("Location: paginainicial.php");
     } 
     else {
-        ?>
-    <!DOCTYPE html>
-    <html lang="pt-br">
-        
-            <script type="text/javascript">
-                alert ("Login inválido!");
-         
+?>
+    
+        <script type="text/javascript">
+            alert ("Login inválido!");  
         </script> 
-    </html>
-    <?php
+    
+<?php
         header("Location: acesso.php");
     }    
-    
-    
 ?>
+</html>
