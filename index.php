@@ -193,7 +193,7 @@
 				</span>
 			</div>
 			</br></br></br></br>
-			<div class="fb-comments" data-href="http://facebook.com/example.com/comments" data-numposts="5" data-colorscheme="light"></div>
+			<div class="fb-comments" data-href="http://facebook.com/" data-numposts="5" data-colorscheme="light"></div>
 		</section>
 		
 		<footer>

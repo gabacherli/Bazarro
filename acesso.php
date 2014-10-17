@@ -36,8 +36,8 @@
 				</form>	
 		
 				<div class="y">	
-					<a href="carrinho.html"><img src="Img/Sociais/carrinho.png" alt="carrinho"/><p>Carrinho</p></a>
-					<a href="index.html"><p>Sign Out</p></a>
+					<a href="carrinho.php"><img src="Img/Sociais/carrinho.png" alt="carrinho"/><p>Carrinho</p></a>
+					<a href="index.php"><p>Sign Out</p></a>
 				</div>
 				
 			</div>
