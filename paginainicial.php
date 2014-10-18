@@ -19,12 +19,12 @@
 		<header>
 			<div class="top">
 				<a class="share-icon share-facebook" target="_blank" href="https://www.facebook.com/pages/Bazarro/620119341440567" title="Share on Facebook"></a>
-                <a class="share-icon share-twitter" target="_blank" href="http://twitter.com/share?url=http://jssor.com&text=jQuery%20Image%20Slider/Slideshow/Carousel/Gallery/Banner%20javascript+html%20TOUCH%20SWIPE%20Responsive" title="Share on Twitter"></a>
-                <a class="share-icon share-googleplus" target="_blank" href="https://plus.google.com/share?url=http://jssor.com" title="Share on Google Plus"></a>
-                <a class="share-icon share-linkedin" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=http://jssor.com" title="Share on LinkedIn"></a>
-                <a class="share-icon share-stumbleupon" target="_blank" href="http://www.stumbleupon.com/submit?url=http://jssor.com&title=jQuery%20Image%20Slider/Slideshow/Carousel/Gallery/Banner%20javascript+html%20TOUCH%20SWIPE%20Responsive" title="Share on StumbleUpon"></a>
-                <a class="share-icon share-pinterest" target="_blank" href="http://pinterest.com/pin/create/button/?url=http://jssor.com&media=http://jssor.com/img/site/jssor.slider.jpg&description=jQuery%20Image%20Slider/Slideshow/Carousel/Gallery/Banner%20javascript+html%20TOUCH%20SWIPE%20Responsive" title="Share on Pinterst"></a>
-                <a class="share-icon share-email" target="_blank" href="mailto:?Subject=Jssor%20Slider&Body=Highly%20recommended%20jQuery%20Image%20Slider/Slideshow/Carousel/Gallery/Banner%20javascript+html%20TOUCH%20SWIPE%20Responsive%20http://jssor.com" title="Share by Email"></a>
+                <a class="share-icon share-twitter" target="_blank" href="http://twitter.com" title="Share on Twitter"></a>
+                <a class="share-icon share-googleplus" target="_blank" href="https://plus.google.com" title="Share on Google Plus"></a>
+                <a class="share-icon share-linkedin" target="_blank" href="http://www.linkedin.com" title="Share on LinkedIn"></a>
+                <a class="share-icon share-stumbleupon" target="_blank" href="http://www.stumbleupon.com" title="Share on StumbleUpon"></a>
+                <a class="share-icon share-pinterest" target="_blank" href="http://pinterest.com" title="Share on Pinterst"></a>
+                <a class="share-icon share-email" target="_blank" href="mailto:?Subject=" title="Share by Email"></a>
 			</div>
 			
 			<div class="x">
@@ -142,34 +142,34 @@
 				<!-- Slides Container -->
 				<div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 950px; height: 400px; overflow: hidden;">
 					<div>
-						<img u="image" src="Jssor.Slider.FullPack/img/landscape/02.jpg" />
+						<img u="image" src="Img/tmp/02.jpg" />
 					</div>
 					<div>
-						<img u="image" src="Jssor.Slider.FullPack/img/landscape/03.jpg" />
+						<img u="image" src="Img/tmp/03.jpg" />
 					</div>
 					<div>
-						<img u="image" src="Jssor.Slider.FullPack/img/landscape/04.jpg" />
+						<img u="image" src="Img/tmp/04.jpg" />
 					</div>
 					<div>
-						<img u="image" src="Jssor.Slider.FullPack/img/landscape/05.jpg" />
+						<img u="image" src="Img/tmp/05.jpg" />
 					</div>
 					<div>
-						<img u="image" src="Jssor.Slider.FullPack/img/landscape/06.jpg" />
+						<img u="image" src="Img/tmp/06.jpg" />
 					</div>
 					<div>
-						<img u="image" src="Jssor.Slider.FullPack/img/landscape/07.jpg" />
+						<img u="image" src="Img/tmp/07.jpg" />
 					</div>
 					<div>
-						<img u="image" src="Jssor.Slider.FullPack/img/landscape/08.jpg" />
+						<img u="image" src="Img/tmp/08.jpg" />
 					</div>
 					<div>
-						<img u="image" src="Jssor.Slider.FullPack/img/landscape/09.jpg" />
+						<img u="image" src="Img/tmp/09.jpg" />
 					</div>
 					<div>
-						<img u="image" src="Jssor.Slider.FullPack/img/landscape/10.jpg" />
+						<img u="image" src="Img/tmp/10.jpg" />
 					</div>
 					<div>
-						<img u="image" src="Jssor.Slider.FullPack/img/landscape/11.jpg" />
+						<img u="image" src="Img/tmp/11.jpg" />
 					</div>
 				</div>
 				<!-- bullet navigator container -->
