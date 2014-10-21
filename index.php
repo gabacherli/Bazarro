@@ -10,7 +10,7 @@
 		
 		<link rel="stylesheet" type="text/css" href="css/padrao.css"/> <!-- CSS TOPO PADRAO -->
 		<link rel="stylesheet" type="text/css" href="css/index.css"/> <!-- CSS -->
-		<link rel="stylesheet" type="text/css" href="css/jssorb.css"/> <!-- CSS JQUERY -->
+                <link rel="stylesheet" type="text/css" href="css/jssorb.css"/> <!-- CSS JQUERY -->
 		<link rel="shortcut icon" type="image/x-icon" href="Img/Sociais/favicon.png"/> <!-- ÍCONE NAVEGADOR -->
 		
 	</head>
@@ -65,8 +65,8 @@
 			</nav>	
 		</header>
 		
-		<section>
-			<script type="text/javascript" src="script/jquery-1.9.1.min.js"></script>
+                    <div class="jq">
+                        <script type="text/javascript" src="script/jquery-1.9.1.min.js"></script>
 			<script type="text/javascript" src="script/jssor.core.js"></script>
 			<script type="text/javascript" src="script/jssor.utils.js"></script>
 			<script type="text/javascript" src="script/jssor.slider.js"></script>
@@ -193,9 +193,50 @@
 				</span>
 			</div>
 			</br></br></br></br>
-			<div class="fb-comments" data-href="http://facebook.com/" data-numposts="5" data-colorscheme="light"></div>
-		</section>
+                    </div>  
+                
+		<aside>
+			<p>filtro</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		</aside>
 		
+		<section>			
+			<div class="item">
+				<img class="LOGO" alt="LOGO" src="star.jpg"/>
+				<p class="nome">Produto 01</p>
+				<p class="preco"><b>R$ 199,99</b></P>
+				<iframe src="http://www.facebook.com/plugins/like.php?href=http://www.facebook.com/pages/Bazarro/620119341440567" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:70px;" allowtransparency="true"></iframe>
+				
+			</div>
+                    <a class="item" href="produto.php">
+				<img class="LOGO" alt="LOGO" src="star.jpg"/>
+				<p class="nome">Produto 02</p>
+				<p class="de">De:</p>
+				<p class="precode">R$ 199,99</P>
+				<p class="para"><b>Para:</p>
+				<p class="precopara">R$ 99,99</b></p>
+                        </a>
+			<div class="item">
+				<img class="LOGO" alt="LOGO" src="star.jpg"/>
+				<p>Starbucks</p>
+			</div>
+			<div class="item">
+				<img class="LOGO" alt="LOGO" src="star.jpg"/>
+				<p>Starbucks</p>
+			</div>
+			<div class="item">
+				<img class="LOGO" alt="LOGO" src="star.jpg"/>
+				<p>Starbucks</p>
+			</div>
+			<div class="item">
+				<img class="LOGO" alt="LOGO" src="star.jpg"/>
+				<p>Starbucks</p>
+			</div>
+			<div class="item">
+				<img class="LOGO" alt="LOGO" src="star.jpg"/>
+				<p>Starbucks</p>
+			</div>
+		</section>
+                			
 		<footer>
 			<div class="foot">
 				<ul>

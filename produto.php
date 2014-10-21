@@ -58,6 +58,10 @@
 		</header>
 		
 		<section>
+                    
+                    
+                    <div class="fb-comments" data-href="http://facebook.com/" data-numposts="5" data-colorscheme="light"></div>
+                 
 			
 		</section>
 		
