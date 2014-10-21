@@ -68,21 +68,27 @@
 
 			<div class="signin">
 				<p>Ainda não tenho cadastro</p></br>
-				<form>
+				<form method="POST" action="confirmacao.php">
 				
 					<p>Dados de Identificação</p>
-					RG:<input type="text" placeholder="RG"/></br>
-					CPF:<input type="text" placeholder="CPF"/></br>
-					E-mail:<input type="email" placeholder="E-mail"/></br>
-					Senha: <input type="password" placeholder="Senha"/></br>
-					Confirma sua Senha:<input type="password" placeholder="Senha"/></br>
+                                        Nome Completo:<input type="text" placeholder="Nome" name="nome""></br>
+					Data de Nascimento:<input type="date" placeholder="Data de Nascimento"name="datanasc"/></br>
+					Sexo:<input type="radio" name="sexo" value="Masculino"name="sexo"/>Masculino
+                			     <input type="radio" name="sexo" value="Feminino"name="sexo"/>Feminino</br>
+					RG:<input type="text" placeholder="RG" name="RG"/></br>
+					CPF:<input type="text" placeholder="CPF"name="CPF"/></br>
+					Celular:<input type="text" placeholder="Celular"name="cel"/></br>
+					Telefone:<input type="text" placeholder="Telefone"name="tel"/></br>
+                                        E-mail:<input type="email" placeholder="E-mail"name="email"/></br>
+					Senha: <input type="password" placeholder="Senha"name="senha1"/></br>
+					Confirma sua Senha:<input type="password" placeholder="Senha"name="senha2"/></br>
 					
 					<p> Meu Endereço</p>
-					Endereço:</br><input type="text" placeholder="Endereço"/>
-					<input type="number" placeholder="Número"/></br>
-					<input type="number" placeholder="Apartamento"/>
-					<input type="text" placeholder="Complemento"/></br>
-					CEP:<input type="address" placeholder="CEP"/></br>
+					Endereço:</br><input type="text" placeholder="Endereço"name="endereco"/>,
+                                        <input type="number" placeholder="Número"name="num"/></br>
+					<input type="text" placeholder="Complemento"name="comp"/></br>
+					CEP:<input type="address" placeholder="CEP"name="CEP"/></br>
+                                        Cidade:<input type="text" placeholder="Cidade"name="cidade"/></br>
 					Estado:<select name="estado"> 
 						<option value="estado">Selecione o Estado</option>
 						<option value="ac">Acre</option> 
@@ -113,16 +119,8 @@
 						<option value="sp">São Paulo</option> 
 						<option value="to">Tocantins</option> 
 					</select>
-					
-					</br><p>Dados Pessoais</p>
-					Nome:<input type="name" placeholder="Nome"/></br>
-					Data de Nascimento:<input type="date" placeholder="Data de Nascimento"/></br>
-					Sexo:<input type="radio" name="Sexo" value="Masculino">Masculino
-						 <input type="radio" name="Sexo" value="Feminino">Feminino</br>
-					Celular:<input type="text" placeholder="Celular"/></br>
-					Telefone:<input type="text" placeholder="Telefone"/></br>
-					
-					</br><input type="image" src="Img/Sociais/enviar.png" alt="Submit Form"/>
+
+                                        </br><input type="image" src="Img/Sociais/enviar.png" alt="Submit Form"value="cadastrar"name="cadastrar"/>
 				</form>
 			</div>
 		</section>

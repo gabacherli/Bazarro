@@ -80,6 +80,7 @@ border: 1px solid #FF5E00;
 	border-radius: 4px;
 	padding: 4px;
 	margin: 2%;
+        width: 30px;
 }
 
 .signin form input[type="address"]{
