@@ -1,7 +1,5 @@
 <?php
-// abrir conexao e selecionar o banco de dados
-// CONFERIR A PORTA ABERTA PARA MYSQL NO MACKENZIE
-$conexao = mysqli_connect("127.0.0.1","root","root");
+$conexao = mysqli_connect("localhost","root","linux","Bazarro");
 // tratamento de erros
 if (mysqli_connect_errno())
 {

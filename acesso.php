@@ -68,7 +68,7 @@
 
 			<div class="signin">
 				<p>Ainda não tenho cadastro</p></br>
-				<form method="POST" action="confirmacao.php">
+                                <form method="POST" action="validaCadastro.php">
 				
 					<p>Dados de Identificação</p>
                                         Nome Completo:<input type="text" placeholder="Nome" name="nome""></br>

@@ -11,8 +11,11 @@
     </head>
     <body>
         
-        <form method="POST" action="confirmacao.php">
-            <?php $erro = FALSE; ?>
+        <form method="POST" >
+            <?php 
+                $erro = FALSE; 
+                include "conecta_mysql.php"; 
+            ?>
             
             <input type="hidden" name="nome" value="<?php echo $_POST['nome']?>"/>
             <?php $nome = $_POST['nome']; 
@@ -20,6 +23,7 @@
                     echo "Verifique se o campo nome esta preenchido.<br>"; $erro=TRUE;
                     
                 }
+                
             ?>
 
             <input type="hidden" name="datanasc"value="<?php echo $_POST['datanasc']?>"/>
@@ -79,9 +83,55 @@
                     echo " Verifique se o campo Senha esta preenchido, se a senha tem menos de 5 digitos ou está igual a digitada anteriormente.<br/>"; $erro=TRUE;  
                 }
             ?>
-        <?php 
-            if($erro = FALSE){
-                include 'confirmacao.php';    
+            
+            <input type="hidden" name="endereco"value="<?php echo $_POST ['endereco']; ?>"/>
+            <?php $endereco = $_POST['endereco']; 
+                if (empty($endereco)){
+                    echo " Verifique se o campo endereço esta preenchido"; $erro=TRUE;  
+                } 
+            ?>
+            
+            <input type="hidden"name="num" value="<?php echo $_POST ['num']; ?>"/>
+            <?php $numero = $_POST['num']; 
+                if (empty($numero)){
+                    echo " Verifique se o campo numero esta preenchido"; $erro=TRUE;  
+                } 
+            ?>            
+					
+            <input type="hidden"name="comp" value="<?php echo $_POST ['comp']; ?>"/>
+            <?php $complemento = $_POST['comp']; ?>
+					
+            <input type="hidden"name="CEP"value="<?php echo $_POST ['CEP']; ?>"/>
+            <?php $CEP = $_POST['CEP']; 
+                if (strlen($CEP)<9 OR empty($CEP)){
+                    echo "Verifique se o campo CEP esta preenchido corretamente.<br/>"; $erro=TRUE;  
+                }
+            ?>
+            
+            <input type="hidden" name="cidade" value="<?php echo $_POST ['cidade']; ?>"/>
+            <?php $cidade = $_POST['cidade']; 
+                if (empty($numero)){
+                    echo "Verifique se o campo cidae esta preenchido.<br/>"; $erro=TRUE;  
+                }
+            ?>
+	
+            <select type="hidden" name="estado" value="<?php echo $_POST ['estado']; ?>">
+            <?php $estado = $_POST['estado']; 
+                if ($estado == "estado"){
+                    echo "Selecione o estado onde mora.<br/>"; $erro=TRUE;  
+                }
+            ?>
+            </select>    
+                
+            <?php
+            
+            $codusu++;
+            $resultado1 = mysqli_query($conexao, "INSERT INTO usuario ( codusu, nome, datanasc, sexo, RG, CPF, celular, telefone, email, senha) VALUES ('".$codusu."',".$nome."',".$datanasc.",".$sexo."',".$RG."',".$CPF."',".$cel."',".$tel."',".$email."',".$senha2.")") or die("Não foi possível executar a SQL: ".mysqli_error($conexao));
+            $resultado2 = mysqli_query($conexao, "INSERT INTO endereco( codusu, endereco, numero, complemento, CEP, cidade, estado)             VALUES ('".$codusu."',".$endereco."',".$numero.",".$complemento."',".$CEP."',".$cidade."',".$estado.")")                    or die("Não foi possível executar a SQL: ".mysqli_error($conexao));
+       
+            if($erro = FALSE & $resultado1 = TRUE & $resultado2 = TRUE){
+                include 'confirmacao.php';
+                
             }
             else{
                 include 'acesso.php';

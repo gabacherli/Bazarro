@@ -3,10 +3,10 @@
 <?php
 
     $email = $_POST['campoemail'];
-    $senha= $_POST['camposenha'];
+    $senha2= $_POST['camposenha'];
     
     include "validaLogin.php";
-    $resposta = autentica($email,$senha);
+    $resposta = autentica($email,$senha2);
     if($resposta == true){
         header("Location: paginainicial.php");
     } 
