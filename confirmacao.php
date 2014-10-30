@@ -69,7 +69,7 @@
 		<section>
                     
                     <h1>Pronto! Você está cadastrado!</h1></br>
-                    <a href="index.php"><h3>Vamos às compras?</h3></a>
+                    <a href="paginainicial.php"><h3>Vamos às compras?</h3></a>
                     
 		</section>
 		

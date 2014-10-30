@@ -59,7 +59,7 @@
 		<section>
 			<div class="login">
 				<p>Já tenho cadastro</p></br>
-				<form action = "login.php" method = "post">
+                                <form action = "validaLogin.php" method = "post">
 					E-mail:<input type="email" placeholder="E-mail" name="campoemail"/></br>
 					Senha:<input type="password" placeholder="Senha" name="camposenha"/></br></br>
 					<input type="image" src="Img/Sociais/enviar.png" alt="Submit Form"/>
