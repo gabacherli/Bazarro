@@ -25,7 +25,7 @@
 			
 <nav>
     <ul>
-	<li class="home"><a href="lista.php">XXXXXX</a></li>
+	<li class="home"><a href="index.php">Página Inicial</a></li>
 	<li><a href="lista.php">XXXXXX</a></li>
 	<li><a href="lista.php">XXXXXX</a></li>
 	<li><a href="lista.php">XXXXXX</a></li>
