@@ -1,3 +1,5 @@
+/* home/linux/projetos... mysqldump Bazarro -u root -plinux > banco.sql*/;
+
 -- MySQL dump 10.13  Distrib 5.5.37, for debian-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: Bazarro

@@ -16,46 +16,9 @@
 	</head>
 
 	<body>
-		<header>
-			<div class="top">
-				<a class="share-icon share-facebook" target="_blank" href="https://www.facebook.com/pages/Bazarro/620119341440567" title="Share on Facebook"></a>
-                <a class="share-icon share-twitter" target="_blank" href="http://twitter.com" title="Share on Twitter"></a>
-                <a class="share-icon share-googleplus" target="_blank" href="https://plus.google.com" title="Share on Google Plus"></a>
-                <a class="share-icon share-linkedin" target="_blank" href="http://www.linkedin.com" title="Share on LinkedIn"></a>
-                <a class="share-icon share-stumbleupon" target="_blank" href="http://www.stumbleupon.com" title="Share on StumbleUpon"></a>
-                <a class="share-icon share-pinterest" target="_blank" href="http://pinterest.com" title="Share on Pinterst"></a>
-                <a class="share-icon share-email" target="_blank" href="mailto:?Subject=" title="Share by Email"></a>
-			</div>
-			
-			<div class="x">
-				
-				<a href="index.php"><img class="LOGO" alt="LOGO" src="Img/Sociais/LOGO.png"/></a>
-				
-				<form>
-					<input type="search" placeholder=" S E A R C H"/>		
-					<input type="image" src="Img/Sociais/pesquisa.jpg" alt="Submit Form"/>
-				</form>	
-		
-				<div class="y">	
-					<a href="carrinho.php"><img src="Img/Sociais/carrinho.png" alt="carrinho"/><p>Carrinho</p></a>
-					<a href="index.php"><p>Sign Out</p></a>
-				</div>
-				
-			</div>
-			
-			<nav>
-				<ul>
-					<li class="home"><a href="lista.php">XXXXXX</a></li>
-					<li><a href="lista.php">XXXXXX</a></li>
-					<li><a href="lista.php">XXXXXX</a></li>
-					<li><a href="lista.php">XXXXXX</a></li>
-					<li><a href="lista.php">XXXXXX</a></li>
-					<li><a href="lista.php">XXXXXX</a></li>
-					<li><a href="lista.php">XXXXXX</a></li>
-					<li><a href="lista.php">XXXXXX</a></li>
-				</ul>	
-			</nav>	
-		</header>
+            <header>
+                <?php include 'header.php' ?>
+            </header>
 		
 		<section>
 			<script type="text/javascript" src="script/jquery-1.9.1.min.js"></script>
@@ -186,33 +149,9 @@
 			</div>
 		</section>
 		
-		<footer>
-			<div class="foot">
-				<ul>
-					<li> <a href="lista.php">XXXXXXX</a></li>
-					<li> <a href="lista.php">XXXXXXX</a></li>
-					<li> <a href="lista.php">XXXXXXX</a></li>
-					<li> <a href="lista.php">XXXXXXX</a></li>
-					<li> <a href="lista.php">XXXXXXX</a></li>
-					<li> <a href="lista.php">XXXXXXX</a></li>
-					<li> <a href="lista.php">XXXXXXX</a></li>
-				</ul>
-				<div class="selocima">
-					<p>Formas de Pagamento:</p>
-					<img alt="seloSegurança" src="Img/Sociais/seloPAG.png" style="width: 220px; height: 55px;"/>
-				</div>
-				<div class="selobaixo">	
-					
-					<img alt="seloProfissional" src="Img/Sociais/seloP.png"style="width: 80px; height: 80px;"/>
-					<img alt="seloSegurança" src="Img/Sociais/selo1.png" style="width: 80px; height: 80px;"/>
-					<img alt="seloSegurança" src="Img/Sociais/seloM.png" style="width: 70px; height: 70px; border-radius: 2px;"/>
-				</div>
-			</div>
-			
-			<div class="copy">
-				<small>Copyright &copy;  Gabriel Coelho - Rhenan Cocev - Thomaz Picelli 2014</small>
-			</div>
-		</footer>
+            <footer>
+                <?php include 'footer.php' ?>
+            </footer>
 		
 		
 	</body>
