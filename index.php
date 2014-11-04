@@ -164,41 +164,17 @@
 		</aside>
 		
 		<section>			
-			<div class="item">
-				<img class="LOGO" alt="LOGO" src="star.jpg"/>
-				<p class="nome">Produto 01</p>
-				<p class="preco"><b>R$ 199,99</b></P>
-				<iframe src="http://www.facebook.com/plugins/like.php?href=http://www.facebook.com/pages/Bazarro/620119341440567" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:70px;" allowtransparency="true"></iframe>
-				
-			</div>
+		
+                        
+                    <?php for ($i = 1; $i>=15; $i++){?> 
                     <a class="item" href="produto.php">
 				<img class="LOGO" alt="LOGO" src="star.jpg"/>
 				<p class="nome">Produto 02</p>
-				<p class="de">De:</p>
 				<p class="precode">R$ 199,99</P>
-				<p class="para"><b>Para:</p>
-				<p class="precopara">R$ 99,99</b></p>
+                                <iframe src="http://www.facebook.com/plugins/like.php?href=http://www.facebook.com/pages/Bazarro/620119341440567" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:70px;" allowtransparency="true"></iframe>
                         </a>
-			<div class="item">
-				<img class="LOGO" alt="LOGO" src="star.jpg"/>
-				<p>Starbucks</p>
-			</div>
-			<div class="item">
-				<img class="LOGO" alt="LOGO" src="star.jpg"/>
-				<p>Starbucks</p>
-			</div>
-			<div class="item">
-				<img class="LOGO" alt="LOGO" src="star.jpg"/>
-				<p>Starbucks</p>
-			</div>
-			<div class="item">
-				<img class="LOGO" alt="LOGO" src="star.jpg"/>
-				<p>Starbucks</p>
-			</div>
-			<div class="item">
-				<img class="LOGO" alt="LOGO" src="star.jpg"/>
-				<p>Starbucks</p>
-			</div>
+                    <?php } ?>
+			
 		</section>
                 			
 		<footer>
