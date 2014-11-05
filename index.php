@@ -26,7 +26,8 @@
 			}(document, 'script', 'facebook-jssdk'));
 		</script>
 		<header>
-                    <?php include 'header.php' ?>
+                    <?php include 'header.php';
+                          include 'conecta_mysql.php'; ?>
 		</header>
 		
                     <div class="jq">
@@ -163,20 +164,19 @@
 			<p>filtro</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		</aside>
 		
-		<section>			
-		
-                        
-                    <?php for ($i = 1; $i>=15; $i++){?> 
-                    <a class="item" href="produto.php">
-				<img class="LOGO" alt="LOGO" src="star.jpg"/>
-				<p class="nome">Produto 02</p>
-				<p class="precode">R$ 199,99</P>
-                                <iframe src="http://www.facebook.com/plugins/like.php?href=http://www.facebook.com/pages/Bazarro/620119341440567" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:70px;" allowtransparency="true"></iframe>
+		<section>
+                   <?php for($i=1; $i<=15; $i++){ ?>
+                    
+                        <a class='item' href='produto.php'>
+                            <img alt='produto <?php echo $i ?>' src='<?php "SELECT imagem FROM produto WHERE(codpro='$i')" ?>'/>
+                            <p class='nome'><?php "SELECT nome FROM produto WHERE(codpro='$i')" ?></p>
+                            <p class='preco'><?php "SELECT valor FROM produto WHERE(codpro='$i')" ?></P>
+                            <iframe src='http://www.facebook.com/plugins/like.php?href=http://www.facebook.com/pages/Bazarro/620119341440567' scrolling='no' frameborder='0' style='border:none; overflow:hidden; width:200px; height:70px;' allowtransparency='true'></iframe>
                         </a>
                     <?php } ?>
-			
+                    
 		</section>
-                			
+                	
 		<footer>
                     <?php include 'footer.php' ?>
 		</footer>
