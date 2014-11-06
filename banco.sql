@@ -82,6 +82,7 @@ CREATE TABLE `produto` (
   `imagem` varchar(200) DEFAULT NULL,
   `descricao` varchar(200) DEFAULT NULL,
   `carrinho` bit(1) DEFAULT NULL,
+  `facebook` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`codpro`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -135,4 +136,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-11-04 19:57:39
+-- Dump completed on 2014-11-06 11:07:19
