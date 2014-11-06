@@ -16,13 +16,19 @@
 	</head>
 
 	<body>
+            <?php
+            if(!$_SESSION["usuario"]) {
+                header("location: acesso.php");
+               die();
+            }
+            ?>
             <header>
                 <?php include 'header.php' ?>
             </header>
 		
 		<section>
                     
-                    <img src="Img/Produtos/Máscaras/mascara_bebe.jpg" alt="produto"/>
+                    <img src="Img/Produtos/Máscaras/mascara bebe.jpg" alt="produto"/>
                     
                     <h1>Nome do produto - Nome do produto</h1>
                     

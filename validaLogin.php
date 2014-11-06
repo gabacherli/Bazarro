@@ -1,4 +1,5 @@
 <?php
+    session_start();
     include 'conecta_mysql.php';
 
     $email = mysql_real_escape_string($_POST['campoemail']);
@@ -9,6 +10,7 @@
     $resultado = mysqli_query($conexao, $sql);
     
     if ($resultado){
+        $_SESSION["usuario"] = $email;
         header("Location: paginainicial.php");
         die();
     } 

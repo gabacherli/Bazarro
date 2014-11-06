@@ -16,6 +16,12 @@
 	</head>
 
 	<body>
+            <?php
+            if(!$_SESSION["usuario"]) {
+                header("location: acesso.php");
+               die();
+            }
+            ?>
 		<div id="fb-root"></div>
 		<script>(function(d, s, id) {
 			var js, fjs = d.getElementsByTagName(s)[0];
@@ -168,7 +174,7 @@
                    <?php for($i=1; $i<=15; $i++){ ?>
                     
                         <a class='item' href='produto.php'>
-                            <img alt='produto <?php echo $i ?>' src='<?php "SELECT imagem FROM produto WHERE(codpro='$i')" ?>'/>
+                            <img alt='produto <?php echo $i ?>' src='<?php "SELECT imagem FROM produto WHERE(codpro='$i')" ?>' />
                             <p class='nome'><?php "SELECT nome FROM produto WHERE(codpro='$i')" ?></p>
                             <p class='preco'><?php "SELECT valor FROM produto WHERE(codpro='$i')" ?></P>
                             <iframe src='http://www.facebook.com/plugins/like.php?href=http://www.facebook.com/pages/Bazarro/620119341440567' scrolling='no' frameborder='0' style='border:none; overflow:hidden; width:200px; height:70px;' allowtransparency='true'></iframe>

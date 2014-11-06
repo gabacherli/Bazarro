@@ -15,6 +15,12 @@
 	</head>
 
 	<body>
+            <?php
+            if(!$_SESSION["usuario"]) {
+                header("location: acesso.php");
+               die();
+            }
+            ?>
             <header>
                 <?php include 'header.php' ?>
             </header>
