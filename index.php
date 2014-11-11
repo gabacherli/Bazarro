@@ -167,7 +167,7 @@
 		<section>
                    <?php for($i=1; $i<=15; $i++){ ?>
                     
-                        <a class='item' href='produto.php'>
+                        <a class='item' href='acesso.php'>
                             <img alt='produto <?php echo $i ?>' src='<?php "SELECT imagem FROM produto WHERE(codpro='$i')" ?>' />
                             <p class='nome'><?php "SELECT nome FROM produto WHERE(codpro='$i')" ?></p>
                             <p class='preco'><?php "SELECT valor FROM produto WHERE(codpro='$i')" ?></P>

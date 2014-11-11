@@ -10,18 +10,28 @@
 		
 		<link rel="stylesheet" type="text/css" href="css/padrao.css"/> <!-- CSS TOPO PADRAO -->
 		<link rel="stylesheet" type="text/css" href="css/index.css"/> <!-- CSS -->
-		<link rel="stylesheet" type="text/css" href="css/jssorb.css"/> <!-- CSS JQUERY -->
+                <link rel="stylesheet" type="text/css" href="css/jssorb.css"/> <!-- CSS JQUERY -->
 		<link rel="shortcut icon" type="image/x-icon" href="Img/Sociais/favicon.png"/> <!-- ÍCONE NAVEGADOR -->
 		
 	</head>
 
 	<body>
-            <header>
-                <?php include 'header.php' ?>
-            </header>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+		<header>
+                    <?php include 'header.php';
+                          include 'conecta_mysql.php'; ?>
+		</header>
 		
-		<section>
-			<script type="text/javascript" src="script/jquery-1.9.1.min.js"></script>
+                    <div class="jq">
+                        <script type="text/javascript" src="script/jquery-1.9.1.min.js"></script>
 			<script type="text/javascript" src="script/jssor.core.js"></script>
 			<script type="text/javascript" src="script/jssor.utils.js"></script>
 			<script type="text/javascript" src="script/jssor.slider.js"></script>
@@ -108,7 +118,7 @@
 						<img u="image" src="Img/tmp/02.jpg" />
 					</div>
 					<div>
-						<img u="image" src="Img/tmp/03.jpg" />
+                                                <img u="image" src="Img/tmp/03.jpg" />
 					</div>
 					<div>
 						<img u="image" src="Img/tmp/04.jpg" />
@@ -147,11 +157,35 @@
 				<span u="arrowright" class="jssora12r" style="width: 30px; height: 46px; top: 180px; right: 0px">
 				</span>
 			</div>
-		</section>
+			</br></br></br></br>
+                    </div>  
+                
+		<aside>
+                    <form>
+                        <input type="radio" name="filtro" value="higiene"/>Higiene</br>
+                	<input type="radio" name="filtro" value="cozinha"/>Cozinha</br>
+                        <input type="radio" name="filtro" value="mascaras"/>Mascaras</br>
+                        <input type="radio" name="filtro" value="pet"/>Pet</br>
+                    </form>     
+                    <p>filtro</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		</aside>
 		
-            <footer>
-                <?php include 'footer.php' ?>
-            </footer>
+		<section>
+                   <?php for($i=1; $i<=15; $i++){ ?>
+                    
+                        <a class='item' href='produto.php'>
+                            <img alt='produto <?php echo $i ?>' src='<?php "SELECT imagem FROM produto WHERE(codpro='$i')" ?>' />
+                            <p class='nome'><?php "SELECT nome FROM produto WHERE(codpro='$i')" ?></p>
+                            <p class='preco'><?php "SELECT valor FROM produto WHERE(codpro='$i')" ?></P>
+                            <iframe src='<?php "SELECT facebook FROM produto WHERE(codpro='$i')" ?> http://www.facebook.com/plugins/like.php?href=http://www.facebook.com/pages/Bazarro/620119341440567' scrolling='no' frameborder='0' style='border:none; overflow:hidden; width:200px; height:70px;' allowtransparency='true'></iframe>
+                        </a>
+                    <?php } ?>
+                    
+		</section>
+                	
+		<footer>
+                    <?php include 'footer.php' ?>
+		</footer>
 		
 		
 	</body>

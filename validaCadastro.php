@@ -127,13 +127,15 @@
             if($erro = FALSE){    
             
                 $codusu++;
-                $resultado1 = mysqli_query($conexao, "INSERT INTO usuario ( codusu, nome, datanasc, sexo, RG, CPF, celular, telefone, email, senha) VALUES ('".$codusu."',".$nome."',".$datanasc.",".$sexo."',".$RG."',".$CPF."',".$cel."',".$tel."',".$email."',".$senha2.")") or die("Não foi possível executar a SQL: ".mysqli_error($conexao));
-                $resultado2 = mysqli_query($conexao, "INSERT INTO endereco( codusu, endereco, numero, complemento, CEP, cidade, estado)             VALUES ('".$codusu."',".$endereco."',".$numero.",".$complemento."',".$CEP."',".$cidade."',".$estado.")")                    or die("Não foi possível executar a SQL: ".mysqli_error($conexao));
-            
-            }
-            if($erro = FALSE & $resultado1 = TRUE & $resultado2 = TRUE){
-                include 'confirmacao.php';
+                $resultado1 = "INSERT INTO usuario( codusu, nome, datanasc, sexo, RG, CPF, celular, telefone, email, senha) VALUES ('$codusu','$nome','$datanasc','$sexo','$RG','$CPF','$cel','$tel','$email','$senha2')";
+                $resultado2 = "INSERT INTO endereco( codusu, endereco, numero, complemento, CEP, cidade, estado)             VALUES ('$codusu','$endereco','$numero','$complemento','$CEP','$cidade','$estado')";
                 
+                $sql1 = mysqli_query ($conexao , $resultado1);
+                $sql2 = mysqli_query ($conexao , $resultado2); 
+                
+                if($sql1 = TRUE & $sql2 = TRUE){
+                    include 'confirmacao.php';
+                }
             }
             else{
                 include 'acesso.php';
@@ -141,9 +143,6 @@
         ?>          
             
         </form>
-
-        
-        
     </body>
 </html> 
 

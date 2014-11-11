@@ -34,25 +34,25 @@
                                 <form method="POST" action="validaCadastro.php">
 				
 					<p>Dados de Identificação</p>
-                                        Nome Completo:<input type="text" placeholder="Nome" name="nome""></br>
-					Data de Nascimento:<input type="date" placeholder="Data de Nascimento"name="datanasc"/></br>
-					Sexo:<input type="radio" name="sexo" value="Masculino"name="sexo"/>Masculino
-                			     <input type="radio" name="sexo" value="Feminino"name="sexo"/>Feminino</br>
-					RG:<input type="text" placeholder="RG" name="RG"/></br>
-					CPF:<input type="text" placeholder="CPF"name="CPF"/></br>
-					Celular:<input type="text" placeholder="Celular"name="cel"/></br>
-					Telefone:<input type="text" placeholder="Telefone"name="tel"/></br>
-                                        E-mail:<input type="email" placeholder="E-mail"name="email"/></br>
-					Senha: <input type="password" placeholder="Senha"name="senha1"/></br>
-					Confirma sua Senha:<input type="password" placeholder="Senha"name="senha2"/></br>
+                                        Nome Completo:<input type="text" placeholder="Nome" name="nome" required></br>
+                                        Data de Nascimento:<input type="date" placeholder="Data de Nascimento"name="datanasc" required/></br>
+					Sexo:<input type="radio" name="sexo" value="Masculino"name="sexo" required/>Masculino
+                			     <input type="radio" name="sexo" value="Feminino"name="sexo" required/>Feminino</br>
+					RG:<input type="text" placeholder="RG" name="RG" required /></br>
+					CPF:<input type="text" placeholder="CPF"name="CPF" required/></br>
+					Celular:<input type="text" placeholder="Celular"name="cel" required/></br>
+					Telefone:<input type="text" placeholder="Telefone"name="tel" required/></br>
+                                        E-mail:<input type="email" placeholder="E-mail"name="email" required/></br>
+					Senha: <input type="password" placeholder="Senha"name="senha1" required/></br>
+					Confirma sua Senha:<input type="password" placeholder="Senha"name="senha2" required/></br>
 					
 					<p> Meu Endereço</p>
-					Endereço:</br><input type="text" placeholder="Endereço"name="endereco"/>,
-                                        <input type="number" placeholder="Número"name="num"/></br>
+					Endereço:</br><input type="text" placeholder="Endereço"name="endereco" required />,
+                                        <input type="number" placeholder="Número"name="num" required/></br>
 					<input type="text" placeholder="Complemento"name="comp"/></br>
-					CEP:<input type="address" placeholder="CEP"name="CEP"/></br>
-                                        Cidade:<input type="text" placeholder="Cidade"name="cidade"/></br>
-					Estado:<select name="estado"> 
+					CEP:<input type="address" placeholder="CEP"name="CEP" required/></br>
+                                        Cidade:<input type="text" placeholder="Cidade"name="cidade" required/></br>
+					Estado:<select name="estado" required> 
 						<option value="estado">Selecione o Estado</option>
 						<option value="ac">Acre</option> 
 						<option value="al">Alagoas</option>
