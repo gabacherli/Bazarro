@@ -81,7 +81,6 @@ CREATE TABLE `produto` (
   `valor` float DEFAULT NULL,
   `imagem` varchar(200) DEFAULT NULL,
   `descricao` varchar(200) DEFAULT NULL,
-  `carrinho` bit(1) DEFAULT NULL,
   `facebook` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`codpro`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -93,6 +92,7 @@ CREATE TABLE `produto` (
 
 LOCK TABLES `produto` WRITE;
 /*!40000 ALTER TABLE `produto` DISABLE KEYS */;
+INSERT INTO `produto` VALUES (1,'Mascara de bebe TESTE',10,'/Img/Produtos/Máscaras/mascara_bebe.jpg','Descricao descricao Descricao descricao','http://www.facebook.com/plugins/like.php?href=http://www.facebook.com/pages/Bazarro/620119341440567');
 /*!40000 ALTER TABLE `produto` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -136,4 +136,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-11-06 11:07:19
+-- Dump completed on 2014-11-11 21:54:55
