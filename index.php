@@ -26,9 +26,10 @@
 			}(document, 'script', 'facebook-jssdk'));
 		</script>
 		<header>
-                    <?php include 'header.php';
-                          include 'conecta_mysql.php'; ?>
-		</header>
+                    <?php include 'headerOut.php'; 
+                          include 'conecta_mysql.php';
+                    ?>
+                </header>
 		
                     <div class="jq">
                         <script type="text/javascript" src="script/jquery-1.9.1.min.js"></script>
@@ -166,14 +167,14 @@
 		
 		<section>
                    <?php for($i=1; $i<=15; $i++){ ?>
-                    
+                        <?php $foto = "SELECT imagem FROM produto WHERE codpro='$i'"; ?> 
                         <a class='item' href='acesso.php'>
-                            <img alt='produto <?php echo $i ?>' src='<?php "SELECT imagem FROM produto WHERE(codpro='$i')" ?>' />
+                            <img alt='produto <?php echo $i ?>' src='<?php echo "$foto"; ?>' />
                             <p class='nome'><?php "SELECT nome FROM produto WHERE(codpro='$i')" ?></p>
                             <p class='preco'><?php "SELECT valor FROM produto WHERE(codpro='$i')" ?></P>
-                            <iframe src='http://www.facebook.com/plugins/like.php?href=http://www.facebook.com/pages/Bazarro/620119341440567' scrolling='no' frameborder='0' style='border:none; overflow:hidden; width:200px; height:70px;' allowtransparency='true'></iframe>
+                            <iframe src=' <?php "SELECT facebook FROM produto WHERE(codpro='$i')" ?> http://www.facebook.com/plugins/like.php?href=http://www.facebook.com/pages/Bazarro/620119341440567' scrolling='no' frameborder='0' style='border:none; overflow:hidden; width:200px; height:70px;' allowtransparency='true'></iframe>
                         </a>
-                    <?php } ?>
+                    <?php } echo "$foto"; ?>
                     
 		</section>
                 	

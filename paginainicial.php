@@ -161,13 +161,7 @@
                     </div>  
                 
 		<aside>
-                    <form>
-                        <input type="radio" name="filtro" value="higiene"/>Higiene</br>
-                	<input type="radio" name="filtro" value="cozinha"/>Cozinha</br>
-                        <input type="radio" name="filtro" value="mascaras"/>Mascaras</br>
-                        <input type="radio" name="filtro" value="pet"/>Pet</br>
-                    </form>     
-                    <p>filtro</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			<p>filtro</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		</aside>
 		
 		<section>
@@ -177,7 +171,7 @@
                             <img alt='produto <?php echo $i ?>' src='<?php "SELECT imagem FROM produto WHERE(codpro='$i')" ?>' />
                             <p class='nome'><?php "SELECT nome FROM produto WHERE(codpro='$i')" ?></p>
                             <p class='preco'><?php "SELECT valor FROM produto WHERE(codpro='$i')" ?></P>
-                            <iframe src='<?php "SELECT facebook FROM produto WHERE(codpro='$i')" ?> http://www.facebook.com/plugins/like.php?href=http://www.facebook.com/pages/Bazarro/620119341440567' scrolling='no' frameborder='0' style='border:none; overflow:hidden; width:200px; height:70px;' allowtransparency='true'></iframe>
+                            <iframe src=' <?php "SELECT facebook FROM produto WHERE(codpro='$i')" ?> http://www.facebook.com/plugins/like.php?href=http://www.facebook.com/pages/Bazarro/620119341440567' scrolling='no' frameborder='0' style='border:none; overflow:hidden; width:200px; height:70px;' allowtransparency='true'></iframe>
                         </a>
                     <?php } ?>
                     

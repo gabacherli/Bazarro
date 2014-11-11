@@ -28,8 +28,8 @@
 
             <input type="hidden" name="datanasc"value="<?php echo $_POST['datanasc']?>"/>
             <?php $datanasc = $_POST['datanasc']; 
-                if(empty($datanasc) OR !strstr($datanasc,'/')){
-                    echo "Verifique se o campo data de nascimento esta preenchido corretamente (xx/xx/xxxx). <br>"; $erro=TRUE;
+                if(empty($datanasc)){
+                    echo "Verifique se o campo data de nascimento esta preenchido!<br>"; $erro=TRUE;
                 } 
             ?>
             
@@ -114,14 +114,7 @@
                     echo "Verifique se o campo cidae esta preenchido.<br/>"; $erro=TRUE;  
                 }
             ?>
-	
-            <select type="hidden" name="estado" value="<?php echo $_POST ['estado']; ?>">
-            <?php $estado = $_POST['estado']; 
-                if ($estado == "estado"){
-                    echo "Selecione o estado onde mora.<br/>"; $erro=TRUE;  
-                }
-            ?>
-            </select>    
+	   
                 
         <?php
             if($erro = FALSE){    
@@ -135,7 +128,7 @@
                 
                 if($sql1 = TRUE & $sql2 = TRUE){
                     include 'confirmacao.php';
-                }
+                } 
             }
             else{
                 include 'acesso.php';

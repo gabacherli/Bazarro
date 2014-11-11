@@ -1,13 +1,12 @@
 <div class="foot">
     
     <ul>
-	<li> <a href="lista.php">XXXXXXX</a></li>
-	<li> <a href="lista.php">XXXXXXX</a></li>
-	<li> <a href="lista.php">XXXXXXX</a></li>
-	<li> <a href="lista.php">XXXXXXX</a></li>
-	<li> <a href="lista.php">XXXXXXX</a></li>
-	<li> <a href="lista.php">XXXXXXX</a></li>
-	<li> <a href="lista.php">XXXXXXX</a></li>
+        <li><a href="index.php">Página Inicial</a></li>
+	<li><a href="lista.php">Máscaras</a></li>
+	<li><a href="lista.php">Cozinha</a></li>
+	<li><a href="lista.php">Higiene</a></li>
+	<li><a href="lista.php">Pet</a></li>
+	<li><a href="lista.php">Outros</a></li>
     </ul>
     
     <div class="selocima">

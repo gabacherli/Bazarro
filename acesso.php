@@ -16,7 +16,7 @@
 
 	<body>
 		<header>
-                    <?php include 'header.php' ?>
+                    <?php include 'headerOut.php' ?>
                 </header>
 		
 		<section>

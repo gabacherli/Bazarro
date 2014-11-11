@@ -7,28 +7,22 @@
     <a class="share-icon share-pinterest" target="_blank" href="http://pinterest.com/pin/create/button/?url=http://jssor.com&media=http://jssor.com/img/site/jssor.slider.jpg&description=jQuery%20Image%20Slider/Slideshow/Carousel/Gallery/Banner%20javascript+html%20TOUCH%20SWIPE%20Responsive" title="Share on Pinterst"></a>
     <a class="share-icon share-email" target="_blank" href="mailto:?Subject=Jssor%20Slider&Body=Highly%20recommended%20jQuery%20Image%20Slider/Slideshow/Carousel/Gallery/Banner%20javascript+html%20TOUCH%20SWIPE%20Responsive%20http://jssor.com" title="Share by Email"></a>
 </div>
-			
+
 <div class="x">
-				
+
     <a href="index.php"><img class="LOGO" alt="LOGO" src="Img/Sociais/LOGO.png"/></a>
-				
+
     <form>
         <input type="search" placeholder=" S E A R C H"/>		
-	<input type="image" src="Img/Sociais/pesquisa.jpg" alt="Submit Form"/>
+        <input type="image" src="Img/Sociais/pesquisa.jpg" alt="Submit Form"/>
     </form>	
-		
+
     <div class="y">	
-        <a href="acesso.php">
-            <img src="Img/Sociais/carrinho.png" alt="carrinho"/>
-            <p>Carrinho</p>
-        </a>
-        <a href="index.php">
-            <p style="color: red;">[LogOut]</p>
-        </a>
+        <a href="acesso.php"><p>Acesse sua conta</p></a>
     </div>
-				
+
 </div>
-			
+
 <nav>
     <ul>
 	<li class="home"><a href="index.php">Página Inicial</a></li>
