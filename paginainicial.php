@@ -185,10 +185,8 @@
 		</section>
                 	
 		<footer>
-                    <?php include 'footer.php' ?>
-		</footer>
-		
-		
+                    <?php include 'footer.php';
+                    mysqli_close($conexao); ?>
+		</footer>	
 	</body>
-
 </html>

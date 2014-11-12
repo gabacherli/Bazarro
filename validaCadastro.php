@@ -133,6 +133,7 @@
             else{
                 include 'acesso.php';
             }
+            mysqli_close($conexao);
         ?>          
             
         </form>
