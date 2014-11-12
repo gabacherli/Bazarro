@@ -82,6 +82,7 @@ CREATE TABLE `produto` (
   `imagem` varchar(200) DEFAULT NULL,
   `descricao` varchar(200) DEFAULT NULL,
   `facebook` varchar(255) DEFAULT NULL,
+  `comentario` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`codpro`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -92,7 +93,7 @@ CREATE TABLE `produto` (
 
 LOCK TABLES `produto` WRITE;
 /*!40000 ALTER TABLE `produto` DISABLE KEYS */;
-INSERT INTO `produto` VALUES (1,'Mascara de bebe TESTE',10,'/Img/Produtos/Máscaras/mascara_bebe.jpg','Descricao descricao Descricao descricao','http://www.facebook.com/plugins/like.php?href=http://www.facebook.com/pages/Bazarro/620119341440567');
+INSERT INTO `produto` VALUES (1,'Mascara de Bebê',40,'/Img/Produtos/Mascaras/mascara_bebe.jpg','descriçao mascara bebe','http://www.facebook.com/plugins/like.php?href=http://www.facebook.com/pages/Bazarro/620119341440567','cocô'),(2,'Mascara de Pug',40,'/Img/Produtos/Mascaras/mascara_pug.jpg','descriçao mascara pug','http://www.facebook.com/plugins/like.php?href=http://www.facebook.com/pages/Bazarro/620119341440567','cocô'),(3,'Mascara do Sloth',40,'/Img/Produtos/Mascaras/mascara_sloth.jpg','descriçao mascara sloth','http://www.facebook.com/plugins/like.php?href=http://www.facebook.com/pages/Bazarro/620119341440567','cocô'),(4,'Arranhador Kim Jong Un',40,'/Img/Produtos/Pet/arranhador.jpg','descriçao arranhaor','http://www.facebook.com/plugins/like.php?href=http://www.facebook.com/pages/Bazarro/620119341440567','cocô'),(5,'Poopy Puppy',40,'/Img/Produtos/Pet/poopy_puppy.jpg','descriçao poopy puppy','http://www.facebook.com/plugins/like.php?href=http://www.facebook.com/pages/Bazarro/620119341440567','cocô'),(6,'Treine seu gato a ir ao banheiro',40,'/Img/Produtos/Pet/toilet_train.jpg','descriçao mascara bebe','http://www.facebook.com/plugins/like.php?href=http://www.facebook.com/pages/Bazarro/620119341440567','cocô'),(7,'Sabonete de feto',40,'/Img/Produtos/Higiene/sabonete_feto.jpg','descriçao mascara bebe','http://www.facebook.com/plugins/like.php?href=http://www.facebook.com/pages/Bazarro/620119341440567','cocô'),(8,'Sabonete de dedos decepados',40,'/Img/Produtos/Higiene/sabonete_dedos.jpg','descriçao mascara bebe','http://www.facebook.com/plugins/like.php?href=http://www.facebook.com/pages/Bazarro/620119341440567','cocô'),(9,'Dispenser de meleca',40,'/Img/Produtos/Higiene/booger_dispenser.jpg','descriçao mascara bebe','http://www.facebook.com/plugins/like.php?href=http://www.facebook.com/pages/Bazarro/620119341440567','cocô'),(10,'Torradeira Selfie',40,'/Img/Produtos/Cozinha/torradeira_selfie.jpg','descriçao mascara bebe','http://www.facebook.com/plugins/like.php?href=http://www.facebook.com/pages/Bazarro/620119341440567','cocô'),(11,'Xícara gigante de café',40,'/Img/Produtos/Cozinha/xicara_gigante.jpg','descriçao mascara bebe','http://www.facebook.com/plugins/like.php?href=http://www.facebook.com/pages/Bazarro/620119341440567','cocô'),(12,'Spray comestível',40,'/Img/Produtos/Cozinha/spray_comestivel.jpg','descriçao mascara bebe','http://www.facebook.com/plugins/like.php?href=http://www.facebook.com/pages/Bazarro/620119341440567','cocô');
 /*!40000 ALTER TABLE `produto` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -136,4 +137,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-11-11 21:54:55
+-- Dump completed on 2014-11-12 11:26:04
