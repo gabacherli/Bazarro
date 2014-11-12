@@ -165,7 +165,7 @@
 		</aside>
 		
 		<section>
-                  <?php for($i=1; $i<=15; $i++){ ?> 
+                  <?php for($i=1; $i<=12; $i++){ ?> 
                      
                       <?php $sql = "SELECT * FROM produto WHERE codpro='$i'";
                               $resp = mysqli_query ($conexao , $sql);$registro = mysqli_fetch_array($resp);
