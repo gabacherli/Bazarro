@@ -120,13 +120,13 @@
             if($erro = FALSE){    
             
                 $codusu++;
-                $resultado1 = "INSERT INTO usuario( codusu, nome, datanasc, sexo, RG, CPF, celular, telefone, email, senha) VALUES ('$codusu','$nome','$datanasc','$sexo','$RG','$CPF','$cel','$tel','$email','$senha2')";
-                $resultado2 = "INSERT INTO endereco( codusu, endereco, numero, complemento, CEP, cidade, estado)             VALUES ('$codusu','$endereco','$numero','$complemento','$CEP','$cidade','$estado')";
+                $sql1 = "INSERT INTO usuario( codusu, nome, datanasc, sexo, RG, CPF, celular, telefone, email, senha) VALUES ('$codusu','$nome','$datanasc','$sexo','$RG','$CPF','$cel','$tel','$email','$senha2')";
+                $sql2 = "INSERT INTO endereco( codusu, endereco, numero, complemento, CEP, cidade, estado)             VALUES ('$codusu','$endereco','$numero','$complemento','$CEP','$cidade','$estado')";
                 
-                $sql1 = mysqli_query ($conexao , $resultado1);
-                $sql2 = mysqli_query ($conexao , $resultado2); 
+                $resultado1 = mysqli_query ($conexao , $sql1);
+                $resultado2 = mysqli_query ($conexao , $sql2); 
                 
-                if($sql1 = TRUE & $sql2 = TRUE){
+                if($resultado1 = TRUE & $resultado2 = TRUE){
                     include 'confirmacao.php';
                 } 
             }

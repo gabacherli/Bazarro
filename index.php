@@ -162,7 +162,14 @@
                     </div>  
                 
 		<aside>
-			<p>filtro</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><p>    FILTRO:</p><br>
+                    <form> 
+                        <input type="radio" name="filtro" value="Higiene"/> Higiene <br> <br>
+                        <input type="radio" name="filtro" value="Cozinha"/> Cozinha <br><br>
+                        <input type="radio" name="filtro" value="Mascaras"/> Mascaras <br><br>
+                        <input type="radio" name="filtro" value="Pet"/> Pet <br>
+                    </form>
+                    <p></p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		</aside>
 		
 		<section>
@@ -180,7 +187,7 @@
                             <p class='preco'><?php echo "R$". $valor .",00"; ?></P>
                             <iframe src=' <?php echo $facebook; ?>  'scrolling='no' frameborder='0' style='border:none; overflow:hidden; width:200px; height:70px;' allowtransparency='true'></iframe>
                         </a>
-                    <?php } echo "$foto"; ?>
+                    <?php } ?>
                     
 		</section>
                 	

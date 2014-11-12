@@ -28,7 +28,7 @@
 		
 		<section> 
                     <?php  
-                    $y = $_GET['$x'];    
+                    $y = $_GET['x'];    
                     echo "$y"?> 
                     <?php $sql = "SELECT * FROM produto WHERE codpro='$y'";
                               $resp = mysqli_query ($conexao , $sql);$registro = mysqli_fetch_array($resp);

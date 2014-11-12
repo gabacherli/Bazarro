@@ -161,7 +161,14 @@
                     </div>  
                 
 		<aside>
-			<p>filtro</p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><p>    FILTRO:</p><br>
+                    <form> 
+                        <input type="radio" name="filtro" value="Higiene"/> Higiene <br> <br>
+                        <input type="radio" name="filtro" value="Cozinha"/> Cozinha <br><br>
+                        <input type="radio" name="filtro" value="Mascaras"/> Mascaras <br><br>
+                        <input type="radio" name="filtro" value="Pet"/> Pet <br>
+                    </form>
+                    <p></p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		</aside>
 		
 		<section>
@@ -169,18 +176,21 @@
                      
                       <?php $sql = "SELECT * FROM produto WHERE codpro='$i'";
                               $resp = mysqli_query ($conexao , $sql);$registro = mysqli_fetch_array($resp);
+                                $cod  = $registro['codpro'];
                                 $foto = $registro['imagem'];
                                 $nome = $registro['nome'];
                                 $valor = $registro['valor'];
                                 $facebook = $registro['facebook'];
-                        ?> 
-                        <a class='item' method="GET" href="produto.php? $x = '$i'">
+                        
+                        ?>
+                        
+                        <a class='item' method="GET" href="produto.php?x = $cod">
                             <img alt='produto <?php echo $i ?>' src='<?php echo $foto; ?>' />
                             <p class='nome'><?php echo $nome; ?></p>
                             <p class='preco'><?php echo "R$". $valor .",00"; ?></P>
                             <iframe src='<?php echo $facebook; ?>' scrolling='no' frameborder='0' style='border:none; overflow:hidden; width:200px; height:70px;' allowtransparency='true'></iframe>
                         </a>
-                    <?php } echo "$foto"; ?>
+                    <?php } ?>
                      
 		</section>
                 	
