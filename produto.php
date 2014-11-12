@@ -16,30 +16,39 @@
 	</head>
 
 	<body>
-            <?php
+            <?php /*
             if(!$_SESSION["usuario"]) {
                 header("location: acesso.php");
                die();
-            }
+            } */
             ?>
             <header>
                 <?php include 'header.php' ?>
             </header>
 		
-		<section>
+		<section> 
+                    <?php  
+                    $y = $_GET['$x'];    
+                    echo "$y"?> 
+                    <?php $sql = "SELECT * FROM produto WHERE codpro='$y'";
+                              $resp = mysqli_query ($conexao , $sql);$registro = mysqli_fetch_array($resp);
+                                $foto = $registro['imagem'];
+                                $nome = $registro['nome'];
+                                $valor = $registro['valor'];
+                                $facebook = $registro['facebook'];
+                                $descricao = $registro['descricao'];
+                    ?> 
+                    <img src="<?php echo $foto;?>" alt="produto"/>
                     
-                    <img src="Img/Produtos/Máscaras/mascara bebe.jpg" alt="produto"/>
+                    <h1><?php echo $nome;?></h1>
                     
-                    <h1>Nome do produto - Nome do produto</h1>
-                    
-                    <p class="preco">R$ 29,90<p>
+                    <p class="preco">R$ <?php echo $valor;?>,00<p>
                     
                     <a href="carrinho.php"><img src="Img/Sociais/car01.png" alt="comprar"/></a></br>
                     
-                    <iframe src="http://www.facebook.com/plugins/like.php?href=http://www.facebook.com/pages/Bazarro/620119341440567" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:70px;" allowtransparency="true"></iframe>
+                    <iframe src="<?php echo $facebook;?>" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:70px;" allowtransparency="true"></iframe>
                     
-                    <p class="descriçao" >Descrição do produto Descrição do produto Descrição do produto Descrição do produto Descrição do produto Descrição do produto 
-                    Descrição do produto Descrição do produto Descrição do produto </p>
+                    <p class="descriçao" ><?php echo $descricao;?></p>
                     
                     
                     <div id="fb-root"></div>

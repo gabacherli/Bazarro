@@ -165,16 +165,23 @@
 		</aside>
 		
 		<section>
-                   <?php for($i=1; $i<=15; $i++){ ?>
-                    
-                        <a class='item' href='produto.php'>
-                            <img alt='produto <?php echo $i ?>' src='<?php "SELECT imagem FROM produto WHERE(codpro='$i')" ?>' />
-                            <p class='nome'><?php "SELECT nome FROM produto WHERE(codpro='$i')" ?></p>
-                            <p class='preco'><?php "SELECT valor FROM produto WHERE(codpro='$i')" ?></P>
-                            <iframe src=' <?php "SELECT facebook FROM produto WHERE(codpro='$i')" ?> http://www.facebook.com/plugins/like.php?href=http://www.facebook.com/pages/Bazarro/620119341440567' scrolling='no' frameborder='0' style='border:none; overflow:hidden; width:200px; height:70px;' allowtransparency='true'></iframe>
+                  <?php for($i=1; $i<=15; $i++){ ?> 
+                     
+                      <?php $sql = "SELECT * FROM produto WHERE codpro='$i'";
+                              $resp = mysqli_query ($conexao , $sql);$registro = mysqli_fetch_array($resp);
+                                $foto = $registro['imagem'];
+                                $nome = $registro['nome'];
+                                $valor = $registro['valor'];
+                                $facebook = $registro['facebook'];
+                        ?> 
+                        <a class='item' method="GET" href="produto.php? $x = '$i'">
+                            <img alt='produto <?php echo $i ?>' src='<?php echo $foto; ?>' />
+                            <p class='nome'><?php echo $nome; ?></p>
+                            <p class='preco'><?php echo "R$". $valor .",00"; ?></P>
+                            <iframe src='<?php echo $facebook; ?>' scrolling='no' frameborder='0' style='border:none; overflow:hidden; width:200px; height:70px;' allowtransparency='true'></iframe>
                         </a>
-                    <?php } ?>
-                    
+                    <?php } echo "$foto"; ?>
+                     
 		</section>
                 	
 		<footer>
