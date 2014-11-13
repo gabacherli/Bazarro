@@ -25,7 +25,7 @@
             <header>
                 <?php include 'header.php';
                       include 'conecta_mysql.php'; ?> 
-                ?>
+                
             </header>
 		
 		<section> 
