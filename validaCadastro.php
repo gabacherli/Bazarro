@@ -51,9 +51,6 @@
 
             <input type="hidden" name="cel" value="<?php echo $_POST ['cel']; ?>"/>
             <?php $cel = $_POST['cel']; 
-                if(empty($cel) OR strlen($cel)<10){
-                    echo "Verifique se o campo do celular esta preenchido, ou se esta faltando o simbolo de separação entre os numeros (9xxxx-xxxx). <br>"; $erro=TRUE;        
-                }
             ?>
             
             <input type="hidden" name="tel" value="<?php echo $_POST ['tel']; ?>"/>

@@ -34,24 +34,24 @@
                                 <form method="POST" action="validaCadastro.php">
 				
 					<p>Dados de Identificação</p>
-                                        Nome Completo:<input type="text" placeholder="Nome" name="nome" required></br>
-                                        Data de Nascimento:<input type="date" placeholder="Data de Nascimento"name="datanasc" required/></br>
-					Sexo:<input type="radio" name="sexo" value="Masculino"name="sexo" required/>Masculino
+                                        <b style="color: red;font-size: 14pt;"> * </b>Nome Completo:<input type="text" placeholder="Nome" name="nome" required></br>
+                                        <b style="color: red;font-size: 14pt;"> * </b>Data de Nascimento:<input type="date" placeholder="Data de Nascimento"name="datanasc" required/></br>
+					<b style="color: red;font-size: 14pt;"> * </b>Sexo:<input type="radio" name="sexo" value="Masculino"name="sexo" required/>Masculino
                 			     <input type="radio" name="sexo" value="Feminino"name="sexo" required/>Feminino</br>
-					RG:<input type="text" placeholder="RG" name="RG" required /></br>
-					CPF:<input type="text" placeholder="CPF"name="CPF" required/></br>
+					<b style="color: red;font-size: 14pt;"> * </b>RG:<input type="text" placeholder="RG" name="RG" required /></br>
+					<b style="color: red;font-size: 14pt;"> * </b>CPF:<input type="text" placeholder="CPF"name="CPF" required/></br>
 					Celular:<input type="text" placeholder="Celular"name="cel" required/></br>
-					Telefone:<input type="text" placeholder="Telefone"name="tel" required/></br>
-                                        E-mail:<input type="email" placeholder="E-mail"name="email" required/></br>
-					Senha: <input type="password" placeholder="Senha"name="senha1" required/></br>
-					Confirma sua Senha:<input type="password" placeholder="Senha"name="senha2" required/></br>
+					<b style="color: red;font-size: 14pt;"> * </b>Telefone:<input type="text" placeholder="Telefone"name="tel" required/></br>
+                                        <b style="color: red;font-size: 14pt;"> * </b>E-mail:<input type="email" placeholder="E-mail"name="email" required/></br>
+					<b style="color: red;font-size: 14pt;"> * </b>Senha: <input type="password" placeholder="Senha"name="senha1" required/></br>
+					<b style="color: red;font-size: 14pt;"> * </b>Confirma sua Senha:<input type="password" placeholder="Senha"name="senha2" required/></br>
 					
 					<p> Meu Endereço</p>
-					Endereço:</br><input type="text" placeholder="Endereço"name="endereco" required />,
-                                        <input type="number" placeholder="Número"name="num" required/></br>
+					<b style="color: red;font-size: 14pt;"> * </b>Endereço:</br><input type="text" placeholder="Endereço"name="endereco" required />,
+                                        <b style="color: red;font-size: 14pt;"> * </b><input type="number" placeholder="Número"name="num" required/></br>
 					<input type="text" placeholder="Complemento"name="comp"/></br>
-					CEP:<input type="address" placeholder="CEP"name="CEP" required/></br>
-                                        Cidade:<input type="text" placeholder="Cidade"name="cidade" required/></br>
+					<b style="color: red;font-size: 14pt;"> * </b>CEP:<input type="address" placeholder="CEP"name="CEP" required/></br>
+                                        <b style="color: red;font-size: 14pt;"> * </b>Cidade:<input type="text" placeholder="Cidade"name="cidade" required/></br>
 					Estado:<select name="estado" required> 
 						<option value="estado">Selecione o Estado</option>
 						<option value="ac">Acre</option> 
