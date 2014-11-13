@@ -3,7 +3,7 @@
     include 'conecta_mysql.php';
 
     $email = mysql_real_escape_string($_POST['campoemail']);
-    $senha = mysql_real_escape_string($_POST['camposenha']);
+    $senha = md5(mysql_real_escape_string($_POST['camposenha']));
 
     $sql = "SELECT * FROM usuario WHERE(email='$email' && senha='$senha')";
     

@@ -79,6 +79,7 @@
                 if (strlen($senha2)<5 OR empty($senha2) OR $senha2 != $senha1){
                     echo " Verifique se o campo Senha esta preenchido, se a senha tem menos de 5 digitos ou está igual a digitada anteriormente.<br/>"; $erro=TRUE;  
                 }
+                $senha3 = md5($senha2);
             ?>
             
             <input type="hidden" name="endereco"value="<?php echo $_POST ['endereco']; ?>"/>
@@ -117,7 +118,7 @@
             if($erro = FALSE){    
             
                 $codusu++;
-                $sql1 = "INSERT INTO usuario( codusu, nome, datanasc, sexo, RG, CPF, celular, telefone, email, senha) VALUES ('$codusu','$nome','$datanasc','$sexo','$RG','$CPF','$cel','$tel','$email','$senha2')";
+                $sql1 = "INSERT INTO usuario( codusu, nome, datanasc, sexo, RG, CPF, celular, telefone, email, senha) VALUES ('$codusu','$nome','$datanasc','$sexo','$RG','$CPF','$cel','$tel','$email','$senha3')";
                 $sql2 = "INSERT INTO endereco( codusu, endereco, numero, complemento, CEP, cidade, estado)             VALUES ('$codusu','$endereco','$numero','$complemento','$CEP','$cidade','$estado')";
                 
                 $resultado1 = mysqli_query ($conexao , $sql1);
