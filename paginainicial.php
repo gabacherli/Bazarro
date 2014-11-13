@@ -172,10 +172,9 @@
 		</aside>
 		
 		<section>
-                  <?php for($i=1; $i<=12; $i++){ ?> 
-                     
-                      <?php $sql = "SELECT * FROM produto WHERE codpro='$i'";
-                              $resp = mysqli_query ($conexao , $sql);$registro = mysqli_fetch_array($resp);
+                    <?php for($i=1; $i<=12; $i++){
+                        $sql = "SELECT * FROM produto WHERE codpro='$i'";
+                            $resp = mysqli_query ($conexao , $sql);$registro = mysqli_fetch_array($resp);
                                 $cod  = $registro['codpro'];
                                 $foto = $registro['imagem'];
                                 $nome = $registro['nome'];

@@ -24,9 +24,13 @@ DROP TABLE IF EXISTS `carrinho`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `carrinho` (
   `codusu` int(11) DEFAULT NULL,
+  `codpro` int(11) DEFAULT NULL,
+  `qtd` int(11) DEFAULT NULL,
   `valor` float DEFAULT NULL,
   KEY `codusu` (`codusu`),
   CONSTRAINT `codusu` FOREIGN KEY (`codusu`) REFERENCES `usuario` (`codusu`) ON DELETE CASCADE ON UPDATE CASCADE
+  KEY `codpro` (`codpro`),
+  CONSTRAINT `codpro` FOREIGN KEY (`codpro`) REFERENCES `codpro` (`codpro`)  ON DELETE CASCADE ON UPDATE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 

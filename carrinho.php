@@ -22,10 +22,20 @@
             } */
             ?>
             <header>
-                <?php include 'header.php' ?>
+                <?php include 'header.php';
+                      include 'conecta_mysql.php'; ?>
             </header>
 		
 		<section>
+                    <?php                      
+                        $sql = "SELECT * FROM carrinho WHERE coduso='$i'"; //coduso logado (session)
+                            $resp = mysqli_query ($conexao , $sql);$registro = mysqli_fetch_array($resp);
+                            $prod  = $registro['codpro'];
+                            $qtd  = $registro['qtd'];
+                            $valor = $registro['valor'];
+                    
+                        for($prod=1; $prod<=$qtd; $prod++){
+                    ?>
 			<div class="item">
 				<img alt="seloSegurança" src="Img/Sociais/selo1.png"/>
 				<p class="nome" >Nome do Produto</p>
@@ -48,7 +58,8 @@
 				<img alt="continuarComprando" src="Img/Sociais/car01.png"/>
 				<img alt="finalizarCompra" src="Img/Sociais/car02.png"/>
 			</div>
-		</section>
+                    <?php  } ?>
+                </section>
 		
             <footer>
                 <?php include 'footer.php' ?>
