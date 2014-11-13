@@ -23,14 +23,15 @@
             } */
             ?>
             <header>
-                <?php include 'header.php' ?>
+                <?php include 'header.php';
+                      include 'conecta_mysql.php'; ?> 
+                ?>
             </header>
 		
 		<section> 
                     <?php  
                     $y = $_GET['x'];    
-                    echo "$y"?> 
-                    <?php $sql = "SELECT * FROM produto WHERE codpro='$y'";
+                    $sql = "SELECT * FROM produto WHERE codpro='$y'";
                               $resp = mysqli_query ($conexao , $sql);$registro = mysqli_fetch_array($resp);
                                 $foto = $registro['imagem'];
                                 $nome = $registro['nome'];

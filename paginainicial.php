@@ -184,7 +184,7 @@
                         
                         ?>
                         
-                        <a class='item' method="GET" href="produto.php?x = $cod">
+                        <a class='item' method="GET" href="produto.php?x=<?php echo $cod; ?>">
                             <img alt='produto <?php echo $i ?>' src='<?php echo $foto; ?>' />
                             <p class='nome'><?php echo $nome; ?></p>
                             <p class='preco'><?php echo "R$". $valor .",00"; ?></P>
