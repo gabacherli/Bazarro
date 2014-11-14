@@ -34,6 +34,14 @@
             ?>
             
             <input type="hidden" name="sexo" value="<?php echo $_POST ['sexo']; ?>"/>
+            <?php $sexo = $_POST['sexo'];
+                if($sexo == "Masculino"){
+                    $sexo = 'M';
+                }
+                else{
+                    $sexo = 'F';
+                }
+            ?>
             
             <input type="hidden" name="RG" value="<?php echo $_POST ['RG']; ?>"/>
             <?php $RG = $_POST['RG']; 
@@ -51,11 +59,14 @@
 
             <input type="hidden" name="cel" value="<?php echo $_POST ['cel']; ?>"/>
             <?php $cel = $_POST['cel']; 
+                if ($cel == empty){
+                    $cel = 'null';
+                }
             ?>
             
             <input type="hidden" name="tel" value="<?php echo $_POST ['tel']; ?>"/>
             <?php $tel = $_POST['tel']; 
-                if(empty($tel) OR strlen($cel)<9){
+                if(empty($tel) OR strlen($tel)<9){
                     echo "Verifique se o campo do telefone esta preenchido, ou se esta faltando o simbolo de separação entre os numeros (xxxx-xxxx). <br>"; $erro=TRUE;
                 }
             ?>
@@ -97,7 +108,11 @@
             ?>            
 					
             <input type="hidden"name="comp" value="<?php echo $_POST ['comp']; ?>"/>
-            <?php $complemento = $_POST['comp']; ?>
+            <?php $complemento = $_POST['comp']; 
+                if ($complemento == empty){
+                    $complemento = 'null';
+                }
+            ?>
 					
             <input type="hidden"name="CEP"value="<?php echo $_POST ['CEP']; ?>"/>
             <?php $CEP = $_POST['CEP']; 
@@ -109,24 +124,27 @@
             <input type="hidden" name="cidade" value="<?php echo $_POST ['cidade']; ?>"/>
             <?php $cidade = $_POST['cidade']; 
                 if (empty($numero)){
-                    echo "Verifique se o campo cidae esta preenchido.<br/>"; $erro=TRUE;  
+                    echo "Verifique se o campo cidade esta preenchido.<br/>"; $erro=TRUE;  
                 }
             ?>
 	   
                 
         <?php
-            if($erro = FALSE){    
+            if($erro == FALSE){    
             
                 $codusu++;
                 $sql1 = "INSERT INTO usuario( codusu, nome, datanasc, sexo, RG, CPF, celular, telefone, email, senha) VALUES ('$codusu','$nome','$datanasc','$sexo','$RG','$CPF','$cel','$tel','$email','$senha3')";
-                $sql2 = "INSERT INTO endereco( codusu, endereco, numero, complemento, CEP, cidade, estado)             VALUES ('$codusu','$endereco','$numero','$complemento','$CEP','$cidade','$estado')";
+                $sql2 = "INSERT INTO endereco( codusu, endereco, numero, complemento, CEP, cidade, estado) VALUES ('$codusu','$endereco','$numero','$complemento','$CEP','$cidade','$estado')";
                 
-                $resultado1 = mysqli_query ($conexao , $sql1);
-                $resultado2 = mysqli_query ($conexao , $sql2); 
+                $resultado1 = mysqli_query ($conexao, $sql1);
+                $resultado2 = mysqli_query ($conexao, $sql2); 
                 
-                if($resultado1 = TRUE & $resultado2 = TRUE){
+                if($resultado1 == TRUE & $resultado2 == TRUE){
                     include 'confirmacao.php';
-                } 
+                }
+                else{
+                    include 'acesso.php';
+                }
             }
             else{
                 include 'acesso.php';

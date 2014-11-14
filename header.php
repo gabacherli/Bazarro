@@ -18,7 +18,7 @@
     </form>	
 		
     <div class="y">	
-        <a href="acesso.php">
+        <a href="carrinho.php">
             <img src="Img/Sociais/carrinho.png" alt="carrinho"/>
             <p>Carrinho</p>
         </a>

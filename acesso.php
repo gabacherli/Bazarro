@@ -40,7 +40,7 @@
                 			     <input type="radio" name="sexo" value="Feminino"name="sexo" required/>Feminino</br>
 					<b style="color: red;font-size: 14pt;"> * </b>RG:<input type="text" placeholder="RG" name="RG" required /></br>
 					<b style="color: red;font-size: 14pt;"> * </b>CPF:<input type="text" placeholder="CPF"name="CPF" required/></br>
-					Celular:<input type="text" placeholder="Celular"name="cel" required/></br>
+					Celular:<input type="text" placeholder="Celular"name="cel"/></br>
 					<b style="color: red;font-size: 14pt;"> * </b>Telefone:<input type="text" placeholder="Telefone"name="tel" required/></br>
                                         <b style="color: red;font-size: 14pt;"> * </b>E-mail:<input type="email" placeholder="E-mail"name="email" required/></br>
 					<b style="color: red;font-size: 14pt;"> * </b>Senha: <input type="password" placeholder="Senha"name="senha1" required/></br>
