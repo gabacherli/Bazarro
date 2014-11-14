@@ -59,7 +59,7 @@
 
             <input type="hidden" name="cel" value="<?php echo $_POST ['cel']; ?>"/>
             <?php $cel = $_POST['cel']; 
-                if ($cel == empty){
+                if (empty($cel)){
                     $cel = 'null';
                 }
             ?>
@@ -109,7 +109,7 @@
 					
             <input type="hidden"name="comp" value="<?php echo $_POST ['comp']; ?>"/>
             <?php $complemento = $_POST['comp']; 
-                if ($complemento == empty){
+                if (empty($complemento)){
                     $complemento = 'null';
                 }
             ?>

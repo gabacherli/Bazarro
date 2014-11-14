@@ -31,7 +31,7 @@ CREATE TABLE `carrinho` (
   CONSTRAINT `codusu` FOREIGN KEY (`codusu`) REFERENCES `usuario` (`codusu`) ON DELETE CASCADE ON UPDATE CASCADE
   KEY `codpro` (`codpro`),
   CONSTRAINT `codpro` FOREIGN KEY (`codpro`) REFERENCES `codpro` (`codpro`)  ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -60,7 +60,7 @@ CREATE TABLE `endereco` (
   `codusu` int(11) DEFAULT NULL,
   KEY `codusu` (`codusu`),
   CONSTRAINT `endereco_ibfk_1` FOREIGN KEY (`codusu`) REFERENCES `usuario` (`codusu`) ON DELETE NO ACTION ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -88,7 +88,7 @@ CREATE TABLE `produto` (
   `facebook` varchar(255) DEFAULT NULL,
   `comentario` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`codpro`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -120,7 +120,7 @@ CREATE TABLE `usuario` (
   `email` varchar(100) DEFAULT NULL,
   `senha` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`codusu`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
