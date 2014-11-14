@@ -32,6 +32,8 @@
                             $resp = mysqli_query ($conexao , $sql1);$registro = mysqli_fetch_array($resp);
                             $codusu  = $registro['codusu'];
                         
+                        $sql11 = "SELECT count(*) FROM carrinho WHERE coduso='$codusu'"; //saber a quantidade de produtos com o codusu deste usuario                           
+                        
                         $sql2 = "SELECT * FROM carrinho WHERE coduso='$codusu'"; //coduso logado (session)
                             $resp = mysqli_query ($conexao , $sql2);$registro = mysqli_fetch_array($resp);
                             $prod  = $registro['codpro'];
@@ -47,7 +49,7 @@
                                 $descricao = $registro['descricao'];
                             
                     
-                        //for($prod=1; $prod<=$qtd; $prod++){
+                        for($i=1; $i<=$sql11; $i++){
                     ?>
 			<div class="item">
 				<img alt="seloSegurança" src="<?php echo $foto;?>"/>
@@ -65,7 +67,7 @@
 				<img alt="continuarComprando" src="Img/Sociais/car01.png"/>
 				<img alt="finalizarCompra" src="Img/Sociais/car02.png"/>
 			</div>
-                    <?php // } ?>
+                    <?php  } ?>
                 </section>
 		
             <footer>

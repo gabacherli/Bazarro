@@ -162,7 +162,7 @@
                     </div>  
                 
 		<aside>
-                    <br><br><p>    FILTRO:</p><br>
+                    <br><br><p>FILTRO:</p><br>
                     <form> 
                         <input type="radio" name="filtro" value="Higiene"/> Higiene <br> <br>
                         <input type="radio" name="filtro" value="Cozinha"/> Cozinha <br><br>
@@ -205,8 +205,5 @@
                           mysqli_close($conexao);
                     ?>
 		</footer>
-		
-		
 	</body>
-
 </html>

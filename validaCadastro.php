@@ -116,7 +116,7 @@
 					
             <input type="hidden"name="CEP"value="<?php echo $_POST ['CEP']; ?>"/>
             <?php $CEP = $_POST['CEP']; 
-                if (strlen($CEP)<9 OR empty($CEP)){
+                if (empty($CEP)){
                     echo "Verifique se o campo CEP esta preenchido corretamente.<br/>"; $erro=TRUE;  
                 }
             ?>
@@ -127,8 +127,8 @@
                     echo "Verifique se o campo cidade esta preenchido.<br/>"; $erro=TRUE;  
                 }
             ?>
-	   
-                
+        </form>    
+	                   
         <?php
             if($erro == FALSE){    
             
@@ -150,9 +150,7 @@
                 include 'acesso.php';
             }
             mysqli_close($conexao);
-        ?>          
-            
-        </form>
+        ?>            
     </body>
 </html> 
 

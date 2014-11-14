@@ -195,7 +195,7 @@
                             <p class='nome'><?php echo $nome; ?></p>
                             <p class='preco'><?php echo "R$". $valor .",00"; ?></P>
                             <div class="fb-like" data-href=" <?php echo $facebook; ?>" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
-                            <!--<iframe src=' <?php echo $facebook; ?>  'scrolling='no' frameborder='0' style='border:none; overflow:hidden; width:200px; height:70px;' allowtransparency='true'></iframe>
+                            <!--<iframe src=' <?php //echo $facebook; ?>  'scrolling='no' frameborder='0' style='border:none; overflow:hidden; width:200px; height:70px;' allowtransparency='true'></iframe>
                         --> </a>
                     <?php } ?>
                      
