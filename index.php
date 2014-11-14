@@ -171,7 +171,15 @@
                     </form>
                     <p></p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		</aside>
-		
+		<div id="fb-root"></div>
+                    <script>(function(d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0];
+                            if (d.getElementById(id)) return;
+                            js = d.createElement(s); js.id = id;
+                            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+                            fjs.parentNode.insertBefore(js, fjs);
+                          }(document, 'script', 'facebook-jssdk'));
+                    </script>
 		<section>
                     <?php for($i=1; $i<=12; $i++){
                         $sql = "SELECT * FROM produto WHERE codpro='$i'";
@@ -185,8 +193,9 @@
                             <img alt='produto <?php echo $i ?>' src='<?php echo $foto; ?>' />
                             <p class='nome'><?php echo $nome; ?></p>
                             <p class='preco'><?php echo "R$". $valor .",00"; ?></P>
-                            <iframe src=' <?php echo $facebook; ?>  'scrolling='no' frameborder='0' style='border:none; overflow:hidden; width:200px; height:70px;' allowtransparency='true'></iframe>
-                        </a>
+                            <div class="fb-like" data-href=" <?php echo $facebook; ?>" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+                            <!--<iframe src=' <?php echo $facebook; ?>  'scrolling='no' frameborder='0' style='border:none; overflow:hidden; width:200px; height:70px;' allowtransparency='true'></iframe>
+                        --> </a>
                     <?php } ?>
                     
 		</section>
