@@ -132,13 +132,10 @@
     </body>                 
         <?php
             if($erro == FALSE){    
-            
-                $result = mysql_query("SELECT MAX(codusu) FROM usuario");  
-                while($row=mysql_fetch_array($result)){  
-                    $codusu = $row['MAX(codusu)'] + 1;
-                    $sql1 = "INSERT INTO usuario( codusu, nome, datanasc, sexo, RG, CPF, celular, telefone, email, senha) VALUES ('$codusu','$nome','$datanasc','$sexo','$RG','$CPF','$cel','$tel','$email','$senha3')";
-                    $sql2 = "INSERT INTO endereco( codusu, endereco, numero, complemento, CEP, cidade, estado) VALUES ('$codusu','$endereco','$numero','$complemento','$CEP','$cidade','$estado')";
-                }
+                    
+                    $sql1 = "INSERT INTO usuario( nome, datanasc, sexo, RG, CPF, celular, telefone, email, senha) VALUES ('$nome','$datanasc','$sexo','$RG','$CPF','$cel','$tel','$email','$senha3')";
+                    $sql2 = "INSERT INTO endereco( endereco, numero, complemento, CEP, cidade, estado) VALUES ('$endereco','$numero','$complemento','$CEP','$cidade','$estado')";
+                
                 $resultado1 = mysqli_query ($conexao, $sql1);
                 $resultado2 = mysqli_query ($conexao, $sql2); 
                 

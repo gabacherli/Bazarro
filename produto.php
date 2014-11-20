@@ -33,6 +33,7 @@
                     $y = $_GET['x'];    
                     $sql = "SELECT * FROM produto WHERE codpro='$y'";
                               $resp = mysqli_query ($conexao , $sql);$registro = mysqli_fetch_array($resp);
+                                $codpro = $registro['codpro'];
                                 $foto = $registro['imagem'];
                                 $nome = $registro['nome'];
                                 $valor = $registro['valor'];
@@ -45,7 +46,7 @@
                     
                     <p class="preco">R$ <?php echo $valor;?>,00<p>
                     
-                    <a href="validaCompra.php"><img src="Img/Sociais/carrinho.png" alt="comprar"/></a></br>
+                    <a method="GET" href="validaCompra.php?valor=<?php echo $valor;?>&nome=<?php echo $nome;?>&desc=<?php echo $descricao;?>&codpro=<?php echo $codpro;?>"><img src="Img/Sociais/comprar.png" alt="comprar"/></a></br>
                     
                     <iframe src="<?php echo $facebook;?>" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:70px;" allowtransparency="true"></iframe>
                     
