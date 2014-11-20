@@ -16,6 +16,81 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
+-- Table structure for table `PagSeguroProdutos`
+--
+
+DROP TABLE IF EXISTS `PagSeguroProdutos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `PagSeguroProdutos` (
+  `VendedorEmail` varchar(255) NOT NULL,
+  `TransacaoID` varchar(32) NOT NULL,
+  `Ordem` mediumint(5) unsigned NOT NULL,
+  `ProdID` varchar(100) DEFAULT NULL,
+  `ProdDescricao` varchar(100) DEFAULT NULL,
+  `ProdValor` decimal(10,2) DEFAULT NULL,
+  `ProdQuantidade` mediumint(5) unsigned DEFAULT NULL,
+  `ProdFrete` decimal(10,2) DEFAULT NULL,
+  KEY `VendedorEmail` (`VendedorEmail`,`TransacaoID`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `PagSeguroProdutos`
+--
+
+LOCK TABLES `PagSeguroProdutos` WRITE;
+/*!40000 ALTER TABLE `PagSeguroProdutos` DISABLE KEYS */;
+/*!40000 ALTER TABLE `PagSeguroProdutos` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `PagSeguroTransacoes`
+--
+
+DROP TABLE IF EXISTS `PagSeguroTransacoes`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `PagSeguroTransacoes` (
+  `VendedorEmail` varchar(255) NOT NULL,
+  `TransacaoID` varchar(32) NOT NULL,
+  `Referencia` varchar(255) DEFAULT NULL,
+  `Extras` decimal(10,2) DEFAULT NULL,
+  `TipoFrete` char(2) DEFAULT NULL,
+  `ValorFrete` decimal(10,2) DEFAULT NULL,
+  `Anotacao` varchar(250) DEFAULT NULL,
+  `DataTransacao` datetime NOT NULL,
+  `TipoPagamento` varchar(30) NOT NULL,
+  `StatusTransacao` varchar(30) NOT NULL,
+  `CliNome` varchar(100) NOT NULL,
+  `CliEmail` varchar(255) NOT NULL,
+  `CliEndereco` varchar(200) NOT NULL,
+  `CliNumero` varchar(10) DEFAULT NULL,
+  `CliComplemento` varchar(100) DEFAULT NULL,
+  `CliBairro` varchar(100) NOT NULL,
+  `CliCidade` varchar(100) NOT NULL,
+  `CliEstado` char(2) NOT NULL,
+  `CliCEP` varchar(10) NOT NULL,
+  `CliTelefone` varchar(16) DEFAULT NULL,
+  `NumItens` mediumint(5) unsigned NOT NULL,
+  `Data` datetime NOT NULL,
+  `Status` tinyint(1) unsigned NOT NULL DEFAULT '0',
+  KEY `VendedorTransacao` (`VendedorEmail`,`TransacaoID`),
+  KEY `StatusTransacao` (`StatusTransacao`),
+  KEY `Status` (`Status`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `PagSeguroTransacoes`
+--
+
+LOCK TABLES `PagSeguroTransacoes` WRITE;
+/*!40000 ALTER TABLE `PagSeguroTransacoes` DISABLE KEYS */;
+/*!40000 ALTER TABLE `PagSeguroTransacoes` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `endereco`
 --
 
@@ -29,10 +104,10 @@ CREATE TABLE `endereco` (
   `CEP` varchar(15) DEFAULT NULL,
   `cidade` varchar(50) DEFAULT NULL,
   `estado` varchar(30) DEFAULT NULL,
-  `codusu` int(11) DEFAULT NULL,
+  `codusu` int(11) NOT NULL AUTO_INCREMENT,
   KEY `codusu` (`codusu`),
   CONSTRAINT `endereco_ibfk_1` FOREIGN KEY (`codusu`) REFERENCES `usuario` (`codusu`) ON DELETE NO ACTION ON UPDATE CASCADE
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -41,7 +116,7 @@ CREATE TABLE `endereco` (
 
 LOCK TABLES `endereco` WRITE;
 /*!40000 ALTER TABLE `endereco` DISABLE KEYS */;
-INSERT INTO `endereco` VALUES ('rua x y z',1,'null','01234567','sao paulo','pe',1),('rua a b c',4,'null','987654','sao paulo','am',2);
+INSERT INTO `endereco` VALUES ('rua a b c',1,'null','123456789','sao paulo','sp',1),('rua x y z',4,'null','987654321','sao paulo','sp',2),('rua oi oi',8,'null','123456789','sao paulo','sp',3);
 /*!40000 ALTER TABLE `endereco` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -82,7 +157,7 @@ DROP TABLE IF EXISTS `usuario`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `usuario` (
-  `codusu` int(11) NOT NULL, AUTO_INCREMENT,AUTO_INCREMENT=1;
+  `codusu` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(60) DEFAULT NULL,
   `datanasc` date DEFAULT NULL,
   `sexo` char(1) DEFAULT NULL,
@@ -93,7 +168,7 @@ CREATE TABLE `usuario` (
   `email` varchar(100) DEFAULT NULL,
   `senha` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`codusu`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -102,64 +177,10 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (1,'Thomaz','1995-12-24','M','1111111111','1111111111111','null','111111111111','thomazpicelli@gmail.com','e10adc3949ba59abbe56'),(2,'Gabriel','1996-10-10','M','22222222','222222','null','222222','gabriel@1.com','123456');
+INSERT INTO `usuario` VALUES (1,'Thomaz','1995-12-24','M','1111111111','11111111111111','null','111111111','thomazpicelli@gmail.com','e10adc3949ba59abbe56'),(2,'Gabriel ','1996-12-23','M','222222222','222222222222','null','222222222222','gabriel@oi.com','e10adc3949ba59abbe56'),(3,'Rhenan','1995-10-12','M','3333333333','333333333333','null','33333333333','rhenan@oi.com.br','e10adc3949ba59abbe56');
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
-
--- Estrutura da tabela `PagSeguroProdutos`
---
-
-CREATE TABLE IF NOT EXISTS `PagSeguroProdutos` (
-  `VendedorEmail` varchar(255) NOT NULL,
-  `TransacaoID` varchar(32) NOT NULL,
-  `Ordem` mediumint(5) unsigned NOT NULL,
-  `ProdID` varchar(100) DEFAULT NULL,
-  `ProdDescricao` varchar(100) DEFAULT NULL,
-  `ProdValor` decimal(10,2) DEFAULT NULL,
-  `ProdQuantidade` mediumint(5) unsigned DEFAULT NULL,
-  `ProdFrete` decimal(10,2) DEFAULT NULL,
-  KEY `VendedorEmail` (`VendedorEmail`,`TransacaoID`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
-
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `PagSeguroTransacoes`
---
-
-CREATE TABLE IF NOT EXISTS `PagSeguroTransacoes` (
-  `VendedorEmail` varchar(255) NOT NULL,
-  `TransacaoID` varchar(32) NOT NULL,
-  `Referencia` varchar(255) DEFAULT NULL,
-  `Extras` decimal(10,2) DEFAULT NULL,
-  `TipoFrete` char(2) DEFAULT NULL,
-  `ValorFrete` decimal(10,2) DEFAULT NULL,
-  `Anotacao` varchar(250) DEFAULT NULL,
-  `DataTransacao` datetime NOT NULL,
-  `TipoPagamento` varchar(30) NOT NULL,
-  `StatusTransacao` varchar(30) NOT NULL,
-  `CliNome` varchar(100) NOT NULL,
-  `CliEmail` varchar(255) NOT NULL,
-  `CliEndereco` varchar(200) NOT NULL,
-  `CliNumero` varchar(10) DEFAULT NULL,
-  `CliComplemento` varchar(100) DEFAULT NULL,
-  `CliBairro` varchar(100) NOT NULL,
-  `CliCidade` varchar(100) NOT NULL,
-  `CliEstado` char(2) NOT NULL,
-  `CliCEP` varchar(10) NOT NULL,
-  `CliTelefone` varchar(16) DEFAULT NULL,
-  `NumItens` mediumint(5) unsigned NOT NULL,
-  `Data` datetime NOT NULL,
-  `Status` tinyint(1) unsigned NOT NULL DEFAULT '0',
-  KEY `VendedorTransacao` (`VendedorEmail`,`TransacaoID`),
-  KEY `StatusTransacao` (`StatusTransacao`),
-  KEY `Status` (`Status`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
-
-
-
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
@@ -169,4 +190,4 @@ CREATE TABLE IF NOT EXISTS `PagSeguroTransacoes` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2014-11-15  1:38:36
+-- Dump completed on 2014-11-20 20:43:21
