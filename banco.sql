@@ -19,6 +19,10 @@
 -- Table structure for table `PagSeguroProdutos`
 --
 
+/*ALTER DATABASE `Bazarro` CHARSET = Latin1 COLLATE = latin1_swedish_ci;*/
+
+ALTER DATABASE `Bazarro` CHARSET = UTF8 COLLATE = utf8_general_ci;
+
 DROP TABLE IF EXISTS `PagSeguroProdutos`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;

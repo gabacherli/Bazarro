@@ -49,25 +49,25 @@
                                 $descricao = $registro['descricao'];
                             
                     
-                        for($i=1; $i<=$sql11; $i++){
+                      //  for($i=1; $i<=$sql11; $i++){
                     ?>
 			<div class="item">
 				<img alt="seloSegurança" src="<?php echo $foto;?>"/>
 				<p class="nome" ><?php echo $nome;?></p>
 				<input type="number" placeholder="Qtd" value="<?php $x ?>"/>
 				<p class="preco">R$ <?php echo $x * $valor;?>,00</p>
-			</div> <!--
+			</div> 
 			<div class="item">
-				<img alt="seloSegurança" src="Img/Sociais/selo1.png"/>
-				<p class="nome" >Nome do Produto</p>
+                            <img alt="seloSegurança" src="Img/Produtos/Cozinha/spray_comestivel.jpg"/>
+				<p class="nome" >Spray Comestivel</p>
 				<input type="number" placeholder="Qtd" value="1"/>
-				<p class="preco"> R$ 199,99</p>
-			</div> -->
+				<p class="preco"> R$ 30,00</p>
+			</div> 
 			<div class="finalizar">
 				<img alt="continuarComprando" src="Img/Sociais/car01.png"/>
 				<img alt="finalizarCompra" src="Img/Sociais/car02.png"/>
 			</div>
-                    <?php  } ?>
+                    <?php // } ?> 
                 </section>
 		
             <footer>
