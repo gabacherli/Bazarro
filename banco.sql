@@ -82,7 +82,7 @@ DROP TABLE IF EXISTS `usuario`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `usuario` (
-  `codusu` int(11) NOT NULL AUTO_INCREMENT,
+  `codusu` int(11) NOT NULL, AUTO_INCREMENT,AUTO_INCREMENT=1;
   `nome` varchar(60) DEFAULT NULL,
   `datanasc` date DEFAULT NULL,
   `sexo` char(1) DEFAULT NULL,

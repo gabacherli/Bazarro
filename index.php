@@ -115,35 +115,35 @@
 			<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 950px; height: 400px; overflow: hidden; ">
 				<!-- Slides Container -->
 				<div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 950px; height: 400px; overflow: hidden;">
-					<div>
-						<img u="image" src="Img/tmp/02.jpg" />
+                                        <div>
+                                            <img u="image" src="Img/tmp/01.jpg" />
 					</div>
 					<div>
-                                                <img u="image" src="Img/tmp/03.jpg" />
+                                            <img u="image" src="Img/tmp/02.jpg" />
 					</div>
 					<div>
-						<img u="image" src="Img/tmp/04.jpg" />
+                                            <img u="image" src="Img/tmp/03.jpg" />
 					</div>
 					<div>
-						<img u="image" src="Img/tmp/05.jpg" />
+                                            <img u="image" src="Img/tmp/04.jpg" />
 					</div>
 					<div>
-						<img u="image" src="Img/tmp/06.jpg" />
+                                            <img u="image" src="Img/tmp/01.jpg" />
 					</div>
 					<div>
-						<img u="image" src="Img/tmp/07.jpg" />
+                                            <img u="image" src="Img/tmp/02.jpg" />
 					</div>
 					<div>
-						<img u="image" src="Img/tmp/08.jpg" />
+                                            <img u="image" src="Img/tmp/03.jpg" />
 					</div>
 					<div>
-						<img u="image" src="Img/tmp/09.jpg" />
+                                            <img u="image" src="Img/tmp/04.jpg" />
 					</div>
 					<div>
-						<img u="image" src="Img/tmp/10.jpg" />
+                                            <img u="image" src="Img/tmp/01.jpg" />
 					</div>
 					<div>
-						<img u="image" src="Img/tmp/11.jpg" />
+                                            <img u="image" src="Img/tmp/02.jpg" />
 					</div>
 				</div>
 				<!-- bullet navigator container -->
