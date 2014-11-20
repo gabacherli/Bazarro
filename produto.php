@@ -45,7 +45,7 @@
                     
                     <p class="preco">R$ <?php echo $valor;?>,00<p>
                     
-                    <a href="carrinho.php"><img src="Img/Sociais/carrinho.png" alt="comprar"/></a></br>
+                    <a href="validaCompra.php"><img src="Img/Sociais/carrinho.png" alt="comprar"/></a></br>
                     
                     <iframe src="<?php echo $facebook;?>" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:70px;" allowtransparency="true"></iframe>
                     
