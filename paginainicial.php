@@ -115,34 +115,34 @@
 				<!-- Slides Container -->
 				<div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 950px; height: 400px; overflow: hidden;">
                                         <div>
-                                            <img u="image" src="Img/tmp/01.jpg" />
+                                            <a method="GET" href="produto.php?x=4"><img u="image" src="Img/tmp/01.jpg" /></a>
 					</div>
 					<div>
-                                            <img u="image" src="Img/tmp/02.jpg" />
+                                            <a method="GET" href="produto.php?x=1"><img u="image" src="Img/tmp/02.jpg" /></a>
 					</div>
 					<div>
-                                            <img u="image" src="Img/tmp/03.jpg" />
+                                            <a method="GET" href="produto.php?x=12"><img u="image" src="Img/tmp/03.jpg" /></a>
 					</div>
 					<div>
-                                            <img u="image" src="Img/tmp/04.jpg" />
+                                            <a method="GET" href="produto.php?x=11"><img u="image" src="Img/tmp/04.jpg" /></a>
 					</div>
 					<div>
-                                            <img u="image" src="Img/tmp/01.jpg" />
+                                            <a method="GET" href="produto.php?x=4"><img u="image" src="Img/tmp/01.jpg" /></a>
 					</div>
 					<div>
-                                            <img u="image" src="Img/tmp/02.jpg" />
+                                            <a method="GET" href="produto.php?x=1"><img u="image" src="Img/tmp/02.jpg" /></a>
 					</div>
 					<div>
-                                            <img u="image" src="Img/tmp/03.jpg" />
+                                            <a method="GET" href="produto.php?x=12"><img u="image" src="Img/tmp/03.jpg" /></a>
 					</div>
 					<div>
-                                            <img u="image" src="Img/tmp/04.jpg" />
+                                            <a method="GET" href="produto.php?x=11"><img u="image" src="Img/tmp/04.jpg" /></a>
 					</div>
 					<div>
-                                            <img u="image" src="Img/tmp/01.jpg" />
+                                            <a method="GET" href="produto.php?x=4"><img u="image" src="Img/tmp/01.jpg" /></a>
 					</div>
 					<div>
-                                            <img u="image" src="Img/tmp/02.jpg" />
+                                            <a method="GET" href="produto.php?x=1"><img u="image" src="Img/tmp/02.jpg" /></a>
 					</div>
 				</div>
 				<!-- bullet navigator container -->
