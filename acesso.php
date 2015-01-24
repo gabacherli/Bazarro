@@ -25,6 +25,7 @@
                                 <form action = "validaLogin.php" method = "post">
 					E-mail:<input type="email" placeholder="E-mail" name="campoemail"/></br>
 					Senha:<input type="password" placeholder="Senha" name="camposenha"/></br></br>
+                                        Deseja salvar os seus dados?<input name="salvar" type="checkbox"/></p>
 					<input type="image" src="Img/Sociais/enviar.png" alt="Submit Form"/>
 				</form>
 			</div>

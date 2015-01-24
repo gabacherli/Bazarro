@@ -17,7 +17,34 @@
 	<input type="image" src="Img/Sociais/pesquisa.jpg" alt="Submit Form"/>
     </form>	
 		
-    <div class="y">	
+    <div class="y">
+        <?php
+            $salvar = false;
+            if(isset($_POST['salvar'])){
+                $salvar = true;
+            }
+			
+            $user = $_POST['email'];
+            $password = $_POST['senha'];
+                   
+            session_start();
+            $_SESSION['usuario'] = $user;
+				
+            if($salvar){
+		setcookie("email", $user, time()+(60*60*24*7));
+		setcookie("senha", $password, time()+(60*60*24*7));
+            } 
+            else{
+		setcookie("email", "", time()+(60*60*24*7));
+		setcookie("senha", "", time()+(60*60*24*7));
+            }
+            
+            $sql = "SELECT * FROM usuario WHERE email = '$user'";
+            $resp = mysqli_query ($conexao , $sql);$registro = mysqli_fetch_array($resp);
+            $logado  = $registro['nome'];
+            echo "<p> Olá $logado!</p>";
+	?>
+            
         <a href="carrinho.php">
             <img src="Img/Sociais/carrinho.png" alt="carrinho"/>
             <p>Carrinho</p>
