@@ -58,11 +58,10 @@
 			
 <nav>
     <ul>
-	<li class="home"><a href="index.php">Página Inicial</a></li>
-	<li><a href="lista.php">Máscaras</a></li>
-	<li><a href="lista.php">Cozinha</a></li>
-	<li><a href="lista.php">Higiene</a></li>
-	<li><a href="lista.php">Pet</a></li>
-	<li><a href="lista.php">Outros</a></li>
+        <li class="home"><a href="paginainicial.php">Página Inicial</a></li>
+	<li><a method="GET" href="categoria.php?x=<?php echo 'mascara'; ?>">Máscaras</a></li>
+	<li><a method="GET" href="categoria.php?x=<?php echo 'cozinha'; ?>"">Cozinha</a></li>
+	<li><a method="GET" href="categoria.php?x='higiene'">Higiene</a></li>
+	<li><a method="GET" href="categoria.php?x='pet'">Pet</a></li>
     </ul>	
 </nav>
