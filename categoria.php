@@ -42,7 +42,7 @@
                         <?php
                         
                         $y = $_GET['x'];
-                        $sql = "SELECT * FROM produto WHERE categoria = '$y'";
+                        $sql = "SELECT * FROM produto WHERE codcat = '$y'";
                         $resp = mysqli_query ($conexao , $sql);$registro = array();
                         while ($registro = mysql_fetch_array($resp)) {
                             $row[] = $registro;
