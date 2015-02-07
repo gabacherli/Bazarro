@@ -1,0 +1,71 @@
+/* CSS index */
+.jq{
+    width: auto;
+    height: auto;
+    margin: 2%  0% 1% 15%;
+}
+
+aside{
+    background: #f9f9f9;
+    margin-left: 15%;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+    width: 15%;
+    height: auto;
+    float: left;
+    padding: 1px 3px 30px 3px;
+}
+
+aside p{
+    margin-left: 10%;
+    font-size: 18pt;
+}
+
+aside form {
+    margin: 10%;
+}
+
+aside form input{
+    margin-top: 5%;
+}
+
+section{
+	width: 55%;
+	height: auto;
+	float: left;
+}
+
+.item {
+	background-color: #F5F5F5;
+	margin: 0% 0% 2% 2%;
+	width: 30%;
+	height: 370px;
+	float: left;
+        text-decoration: none;
+
+}
+
+.item img {
+	margin: 3% 0% 0% 3%;
+	width: 90%;
+	height: 55%;
+}
+.item iframe{
+	margin-top: 2%;
+}
+
+.item .nome{
+ margin: 5% 0% 0% 10%;
+ font-size: 16px;
+ color: black;
+
+}
+
+.item .preco{
+	margin: 5% 0% 0% 35%;
+	font-size: 25px;
+	color: blue;
+	
+}
+
+

@@ -1,0 +1,41 @@
+section img{
+    width: 30%;
+    height: 100%;
+    margin: 1% 0% 2% 15%;
+    float: left;
+}
+
+section h1{
+    margin: 1% 15% 2% 50%;
+    padding: 3% 0% 0% 0%;
+}
+
+.preco{
+    margin: 5% 15% 2% 70%;
+    color: blue;
+    font-size: 30pt;
+}
+
+a img {
+    height: 50px;
+    width: 250px;
+    padding-top: 3%;
+    padding-left: 7%;
+}
+
+iframe{
+    padding-top: 2%;
+    padding-left: 10%;
+    clear: left;
+}
+
+.descriçao {
+    margin: 2% 20% 5% 20%;
+}
+
+.fb-comments{
+    margin: 0% 20% 2% 20%;  
+}
+
+
+
