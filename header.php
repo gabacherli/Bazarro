@@ -60,8 +60,8 @@
     <ul>
         <li class="home"><a href="paginainicial.php">Página Inicial</a></li>
 	<li><a method="GET" href="categoria.php?x=<?php echo '1'; ?>">Máscaras</a></li>
-	<li><a method="GET" href="categoria.php?x=<?php echo '2'; ?>"">Cozinha</a></li>
-	<li><a method="GET" href="categoria.php?x='3'">Higiene</a></li>
-	<li><a method="GET" href="categoria.php?x='4'">Pet</a></li>
+	<li><a method="GET" href="categoria.php?x=<?php echo '2'; ?>">Cozinha</a></li>
+	<li><a method="GET" href="categoria.php?x=<?php echo '3'; ?>">Higiene</a></li>
+	<li><a method="GET" href="categoria.php?x=<?php echo '4'; ?>">Pet</a></li>
     </ul>	
 </nav>

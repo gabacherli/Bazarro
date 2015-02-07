@@ -1,16 +1,19 @@
 /* CSS index */
 .jq{
-	width: auto;
-	height: auto;
-	margin: 2%  0% 1% 15%;
+    width: auto;
+    height: auto;
+    margin: 2%  0% 1% 15%;
 }
 
 aside{
-	margin-left: 15%;
-	border: 1px black dotted;
-	width: 15%;
-	height: auto;
-	float: left;
+    background: #f9f9f9;
+    margin-left: 15%;
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+    width: 15%;
+    height: auto;
+    float: left;
+    padding: 1px 3px 30px 3px;
 }
 
 aside p{

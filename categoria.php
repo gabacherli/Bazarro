@@ -40,8 +40,9 @@
                           }(document, 'script', 'facebook-jssdk'));
                         </script>
                         <?php
-                        
+                        /*
                         $y = $_GET['x'];
+                        
                         $sql = "SELECT * FROM produto WHERE codcat = '$y'";
                         $resp = mysqli_query ($conexao , $sql);$registro = array();
                         while ($registro = mysql_fetch_array($resp)) {
@@ -53,20 +54,37 @@
                                 $nome = $registro['nome'];
                                 $valor = $registro['valor'];
                                 $facebook = $registro['facebook'];
+                        */
+                        $y = $_GET['x'];
+                        echo $y;
+                        $result = mysql_query("SELECT * FROM produto WHERE codcat = '$y'");
+                        $result_list = array();
+                        while($row = mysql_fetch_array($result)) {
+                            $result_list[] = $row;
+                        }
                         
+                        foreach($result_list as $row) {
+                            $productitems[] = array(
+                                'codpro'   => $row['codpro'],
+                                'foto'     => $row['foto'],
+                                'nome'     => $row['nome'],
+                                'valor'    => $row['valor'],     
+                                'facebook' => $row['facebook']  
+                            );          
+                            echo $productitems;
+                            var_dump($productitems);
+                        
+
                         ?>
-                        
-                        <a class='item' method="GET" href="produto.php?x=<?php echo $cod; ?>">
-                            <img alt='produto <?php echo $i ?>' src='<?php echo $foto; ?>' />
-                            <p class='nome'><?php echo $nome; ?></p>
-                            <p class='preco'><?php echo "R$". $valor .",00"; ?></P>
-                            <div class="fb-like" data-href=" <?php echo $facebook; ?>" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+                        <a class='item' method="GET" href="produto.php?x=<?php echo $row['codpro']; ?>">
+                            <img alt='produto <?php echo $i ?>' src='<?php echo $row['foto']; ?>' />
+                            <p class='nome'><?php echo $row['nome']; ?></p>
+                            <p class='preco'><?php echo "R$". $row['valor'] .",00"; ?></P>
+                            <div class="fb-like" data-href=" <?php echo $row['facebook']; ?>" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
                             <!--<iframe src=' <?php //echo $facebook; ?>  'scrolling='no' frameborder='0' style='border:none; overflow:hidden; width:200px; height:70px;' allowtransparency='true'></iframe> -->
                          </a>
-                         
-                            
                         
-                        <?php } } ?>
+                        <?php }?>
                      
 		</section>
                 	

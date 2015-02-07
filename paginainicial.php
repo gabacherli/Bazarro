@@ -26,7 +26,7 @@
 			<script type="text/javascript" src="script/jssor.core.js"></script>
 			<script type="text/javascript" src="script/jssor.utils.js"></script>
 			<script type="text/javascript" src="script/jssor.slider.js"></script>
-			<script type="text/javascript" src="script/jssor.jqcode.js"></script>
+			<script type="text/javascript" src="script/jqcode.js"></script>
 			<!-- Jssor Slider Begin -->
 			<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 950px; height: 400px; overflow: hidden; ">
 				<!-- Slides Container -->
@@ -64,58 +64,54 @@
 				</div>
 				<!-- bullet navigator container -->
 				<div u="navigator" class="jssorb05" style="position: absolute; bottom: 16px; right: 6px;">
-					<!-- bullet navigator item prototype -->
-					<div u="prototype" style="POSITION: absolute; WIDTH: 16px; HEIGHT: 16px;"></div>
+                                    <!-- bullet navigator item prototype -->
+                                    <div u="prototype" style="POSITION: absolute; WIDTH: 16px; HEIGHT: 16px;"></div>
 				</div>
 				<!-- Arrow Left -->
-				<span u="arrowleft" class="jssora12l" style="width: 30px; height: 46px; top: 180px; left: 0px;">
-				</span>
+				<span u="arrowleft" class="jssora12l" style="width: 30px; height: 46px; top: 180px; left: 0px;"></span>
 				<!-- Arrow Right -->
-				<span u="arrowright" class="jssora12r" style="width: 30px; height: 46px; top: 180px; right: 0px">
-				</span>
+				<span u="arrowright" class="jssora12r" style="width: 30px; height: 46px; top: 180px; right: 0px"></span>
 			</div>
-			</br></br></br></br>
                     </div>  
                 
 		<aside>
-                    <br><br><p>    FILTRO:</p><br>
+                    <p>FILTRO:</p>
                     <form> 
                         <input type="radio" name="filtro" value="Higiene"/> Higiene <br> <br>
                         <input type="radio" name="filtro" value="Cozinha"/> Cozinha <br><br>
                         <input type="radio" name="filtro" value="Mascaras"/> Mascaras <br><br>
                         <input type="radio" name="filtro" value="Pet"/> Pet <br>
                     </form>
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		</aside>
-		    <section>
-                        <div id="fb-root"></div>
-                        <script>(function(d, s, id) {
-                            var js, fjs = d.getElementsByTagName(s)[0];
-                            if (d.getElementById(id)) return;
+                </aside>
+		<section>
+                    <div id="fb-root"></div>
+                    <script>(function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
                             js = d.createElement(s); js.id = id;
                             js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
                             fjs.parentNode.insertBefore(js, fjs);
-                          }(document, 'script', 'facebook-jssdk'));
-                        </script>
+                        }(document, 'script', 'facebook-jssdk'));
+                    </script>
                 
-                        <?php for($i=1; $i<=12; $i++){
-                        $sql = "SELECT * FROM produto WHERE codpro='$i'";
-                            $resp = mysqli_query ($conexao , $sql);$registro = mysqli_fetch_array($resp);
-                                $cod  = $registro['codpro'];
-                                $foto = $registro['imagem'];
-                                $nome = $registro['nome'];
-                                $valor = $registro['valor'];
-                                $facebook = $registro['facebook'];
+                    <?php for($i=1; $i<=12; $i++){
+                    $sql = "SELECT * FROM produto WHERE codpro='$i'";
+                        $resp = mysqli_query ($conexao , $sql);$registro = mysqli_fetch_array($resp);
+                        $cod  = $registro['codpro'];
+                        $foto = $registro['imagem'];
+                        $nome = $registro['nome'];
+                        $valor = $registro['valor'];
+                        $facebook = $registro['facebook'];
+                       
+                    ?>
                         
-                        ?>
-                        
-                        <a class='item' method="GET" href="produto.php?x=<?php echo $cod; ?>">
-                            <img alt='produto <?php echo $i ?>' src='<?php echo $foto; ?>' />
-                            <p class='nome'><?php echo $nome; ?></p>
-                            <p class='preco'><?php echo "R$". $valor .",00"; ?></P>
-                            <div class="fb-like" data-href=" <?php echo $facebook; ?>" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
-                            <!--<iframe src=' <?php //echo $facebook; ?>  'scrolling='no' frameborder='0' style='border:none; overflow:hidden; width:200px; height:70px;' allowtransparency='true'></iframe> -->
-                         </a>
+                    <a class='item' method="GET" href="produto.php?x=<?php echo $cod; ?>">
+                        <img alt='produto <?php echo $i ?>' src='<?php echo $foto; ?>' />
+                        <p class='nome'><?php echo $nome; ?></p>
+                        <p class='preco'><?php echo "R$". $valor .",00"; ?></P>
+                        <div class="fb-like" data-href=" <?php echo $facebook; ?>" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+                        <!--<iframe src=' <?php //echo $facebook; ?>  'scrolling='no' frameborder='0' style='border:none; overflow:hidden; width:200px; height:70px;' allowtransparency='true'></iframe> -->
+                    </a>
                     <?php } ?>
                      
 		</section>

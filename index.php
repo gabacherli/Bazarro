@@ -27,7 +27,7 @@
 			<script type="text/javascript" src="script/jssor.core.js"></script>
 			<script type="text/javascript" src="script/jssor.utils.js"></script>
 			<script type="text/javascript" src="script/jssor.slider.js"></script>
-			<script type="text/javascript" src="script/jssor.jqcode.js"></script>
+			<script type="text/javascript" src="script/jqcode.js"></script>
                         <!-- Jssor Slider Begin -->
 			<div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 950px; height: 400px; overflow: hidden; ">
 				<!-- Slides Container -->
@@ -69,25 +69,21 @@
 					<div u="prototype" style="POSITION: absolute; WIDTH: 16px; HEIGHT: 16px;"></div>
 				</div>
 				<!-- Arrow Left -->
-				<span u="arrowleft" class="jssora12l" style="width: 30px; height: 46px; top: 180px; left: 0px;">
-				</span>
+				<span u="arrowleft" class="jssora12l" style="width: 30px; height: 46px; top: 180px; left: 0px;"></span>
 				<!-- Arrow Right -->
-				<span u="arrowright" class="jssora12r" style="width: 30px; height: 46px; top: 180px; right: 0px">
-				</span>
+				<span u="arrowright" class="jssora12r" style="width: 30px; height: 46px; top: 180px; right: 0px"></span>
 			</div>
-			</br></br></br></br>
                     </div>  
                 
 		<aside>
-                    <br><br><p>FILTRO:</p><br>
+                    <p>FILTRO:</p>
                     <form> 
                         <input type="radio" name="filtro" value="Higiene"/> Higiene <br> <br>
                         <input type="radio" name="filtro" value="Cozinha"/> Cozinha <br><br>
                         <input type="radio" name="filtro" value="Mascaras"/> Mascaras <br><br>
                         <input type="radio" name="filtro" value="Pet"/> Pet <br>
                     </form>
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-		</aside>
+                </aside>
 		<section>
                     <div id="fb-root"></div>
                     <script>(function(d, s, id) {

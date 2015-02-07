@@ -26,10 +26,10 @@
 <nav>
     <ul>
 	<li class="home"><a href="index.php">Página Inicial</a></li>
-	<li><a href="lista.php">Máscaras</a></li>
-	<li><a href="lista.php">Cozinha</a></li>
-	<li><a href="lista.php">Higiene</a></li>
-	<li><a href="lista.php">Pet</a></li>
-	<li><a href="lista.php">Outros</a></li>
+	<li><a href="acesso.php">Máscaras</a></li>
+	<li><a href="acesso.php">Cozinha</a></li>
+	<li><a href="acesso.php">Higiene</a></li>
+	<li><a href="acesso.php">Pet</a></li>
+	<li><a href="acesso.php">Outros</a></li>
     </ul>	
 </nav>
